@@ -9,17 +9,10 @@
     --off-white: #F6F4F2;
 }
 
-h1 {
-    font-family: 'Sorts Mill Goudy', serif;
-    color: var(--dark-blue);
-    font-weight: 100;
-    font-size: 90px;
-}
-
 h2 {
     font-family: 'Sorts Mill Goudy', serif;
     color: var(--dark-blue);
-    font-weight: 100;
+    font-weight: 200;
     kerning: -0.02px;
     font-size: 54px;
 }
@@ -28,6 +21,14 @@ h3 {
     font-family: 'Montserrat', sans-serif;
     color: var(--peach);
     font-size: 12px;
+}
+
+h4{
+
+}
+
+h5{
+
 }
 
 h6 {
@@ -86,4 +87,35 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+section{
+    margin-bottom: 130px;
+}
+
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+cover{
+    top: 0;
+    height: 631px;
+}
+
+.cover-div{
+    width: 570px;
+}
+
+.features-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.shop-front {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
