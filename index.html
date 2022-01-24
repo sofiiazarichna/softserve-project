@@ -1,141 +1,150 @@
-<!--REF
-Hero title/Block title - h2
-Caption/Small - h3
-Heading - h4
-Subheading - h5 
-Subtitle - h6
-else - paragraph class-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website project for SoftServe</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="Images/Icons/Aurora.svg" alt="the logo of the store" style="width: 100px; height: inherit;" />
-        <div class="footer-div">
-            <a href="#best-sellers"><p>Trending</p></a>
-            <a href="#store"><p>Collection</p></a>
-            <a href="#testimonials"><p>Testimonials</p></a>
-            <a href="#footer"><p>Contact Us</p></a>
-        </div>
+    <header id="header" style="display: flex;">
+        <img src="Images/Icons/Aurora.svg" alt="the logo of the store" style="width: 77px; height: inherit;" />
+        <nav style="display: flex; flex-direction: row; justify-content: center; ">
+            <div><a href="#best-sellers"><p>Trending</p></a></div>
+            <div><a href="#store"><p>Collection</p></a></div>
+            <div><a href="#testimonials"><p>Testimonials</p></a></div>
+            <div><a href="#footer"><p>Contact Us</p></a></div>
+        </nav>
     </header>
     <main>
-        <section class="cover">
-            <div class="cover-div">
+        <section id="cover" class="cover">
+            <div style="max-width: 570px;">
                 <h3>JEWELRY</h3>
-                <h2 style="font-size: 90px;">Shine Bright With Aurora.</h2>
-                <h6>Every day is your special day with our fine jewelry!</h6>
+                <h2 style="font-size: 90px;">Shine Bright With Aurora<span style="color: var(--peach);">.</span></h2>
+                <h6 style="margin-top: 40px;">Every day is your special day with our fine jewelry!</h6>
+                <button style="padding: 16px 26px 17px 26px; margin-top: 55px;">— Shop</button>
             </div>
-            <button>— Shop</button>
         </section>
-        <section class="features">
-            <div class="features-div">
-                <div>
+        <section id="features" class="features">
+            <div class="space-between">
+                <div class="features-div">
                     <img src="Images/Icons/Gem.svg" alt="a graphic of a gem" style="width: 100px; height: inherit;" />
-                    <h4>Gems and Natural Stones</h4>
+                    <h4 style="margin-top: 20px;">Gems and Natural Stones</h4>
+                    <div style="margin-top: 15px; margin-bottom: 15px;"><div width: 33px;><hr class="features-hr"></div></div>
                     <p>Our fine jewelry will never darken or wear off. With proper care, you can wear it for 50+ years and pass it to your heirs!</p>
                 </div>
-                <div>
+                <div class="features-div">
                     <img src="Images/Icons/Necklace.svg" alt="a graphic of a necklace" style="width: 100px; height: inherit;" />
-                    <h4>585 Gold</h4>
+                    <h4 style="margin-top: 20px;">585 Gold</h4>
+                    <div style="margin-top: 15px; margin-bottom: 15px;"><div width: 33px;><hr class="features-hr"></div></div>
                     <p>We use precious and semi-precious stones: diamonds, emeralds, sapphires, etc. and also work with Swarovski crystals.</p>
                 </div>
-                <div>
+                <div class="features-div">
                     <img src="Images/Icons/Earrings.svg" alt="a graphic of earrings" style="width: 100px; height: inherit;" />
-                    <h4>Designer Collections</h4>
+                    <h4 style="margin-top: 20px;">Designer Collections</h4>
+                    <div style="margin-top: 15px; margin-bottom: 15px;"><div width: 33px;><hr class="features-hr"></div></div>
                     <p>We create exquisite fine jewelry. Each collection has a soul and a certain message that resonates in the hearts of our customers.</p>
                 </div>
             </div>
         </section>
-        <section class="best-sellers" id="best-sellers">
-            <h3>TRENDING</h3>
-            <h2>Best-Selling Items.</h2>
-            <h6>In this section, you will find fine jewelry chosen by hundreds of our customers around the world. Best price guaranteed.</h6>
-            <div class="shop-front">
+        <section id="best-sellers" class="best-sellers">
+            <div class="centered-horizontally">
+                <div style="max-width: 770px; text-align: center;">
+                    <h3>TRENDING</h3>
+                    <h2>Best-Selling Items<span style="color: var(--peach);">.</span></h2>
+                    <h6 style="margin-top: 25px;">In this section, you will find fine jewelry chosen by hundreds of our customers around the world. Best price guaranteed.</h6>
+                </div>
+            </div>
+            <div class="shop-front space-between">
                 <div class="shop-item">
-                    <img src="Images/Shop-Items/Butterfly.png" alt="a butterfly-shaped earring" />
-                    <h5>Butterfly</h5>
-                    <h3>$99,00</h3>
-                    <button>— Add to cart</button>
+                    <img src="Images/Shop-Items/Butterfly.png" alt="a butterfly-shaped earring" class="centered-horizontally" />
+                    <h5 class="centered-horizontally" style="font-weight: 200; margin: 24px 0px 0px 0px; ">Butterfly</h5>
+                    <h3 class="centered-horizontally" style="font-weight: 700; font-size: 21px; margin: 16px 0px 24px 0px;">$99,00</h3>
+                    <div class="centered-horizontally"><button style="padding: 12px 20px 13px 20px;">— Add to cart</button></div>
                 </div>
                 <div class="shop-item">
                     <img src="Images/Shop-Items/Golden-Sun.png" alt="two earrings " />
-                    <h5>Golden Sun</h5>
-                    <h3>$199,00</h3>
+                    <h5 style="margin: 24px 0px 0px 0px;">Golden Sun</h5>
+                    <h3 style="margin: 16px 0px 24px 0px;">$199,00</h3>
                     <button>— Add to cart</button>
                 </div>
                 <div class="shop-item">
                     <img src="Images/Shop-Items/Elegy.png" alt="" />
-                    <h5>Elegy</h5>
-                    <h3>$199,00</h3>
+                    <h5 style="margin: 24px 0px 0px 0px;">Elegy</h5>
+                    <h3 style="margin: 16px 0px 24px 0px;">$199,00</h3>
                     <button>— Add to cart</button>
                 </div>
                 <div class="shop-item">
                     <img src="Images/Shop-Items/Moonlight.png" alt="" />
-                    <h5>Moonlight</h5>
-                    <h3>$199,00</h3>
+                    <h5 style="margin: 24px 0px 0px 0px;">Moonlight</h5>
+                    <h3 style="margin: 16px 0px 24px 0px;">$199,00</h3>
                     <button>— Add to cart</button>
                 </div>
             </div>
         </section>
-        <section class="our-collection">
-            <div>
+        <section id="our-collection" class="our-collection">
+            <div style="width: 570px;">
                 <h3>COLLECTION</h3>
-                <h2 style="font-size: 90px;">Our Youth Collection on Sale Now.</h2>
-                <h6>from $199 | shop the limited edition</h6>
-                <p>This collection was created while thinking about youth and purity. Trendy gold chains in bracelets and necklaces look very delicate. The entire collection is very light, airy, and is a great fit for any occasion.</p>
-                <button>— Discover the collection</button>
+                <h2 style="font-size: 90px;">Our Youth Collection on Sale Now<span style="color: var(--peach);">.</span></h2>
+                <h6 style="margin-top: 40px;">from <span style="color: var(--peach);">$199</span> | shop the <span style="color: var(--peach);">limited</span> edition</h6>
+                <p style="margin-top: 15px;">This collection was created while thinking about youth and purity. Trendy gold chains in bracelets and necklaces look very delicate. The entire collection is very light, airy, and is a great fit for any occasion.</p>
+                <button style="padding: 16px 26px 17px 26px; margin-top: 40px;">— Discover the collection</button>
             </div>
         </section>
-        <section class="categories">
-            <h3>CATEGORIES</h3>
-            <h2>Choose Your Favorites.</h2>
-            <h6>Choose the fine jewelry that you will shine in tomorrow.</h6>
-            <div>
-                <div class="container">
-                    <img src="Images/Categories/Necklaces.jpg" alt="" style="width: 370px; height: 502px;" />
+        <section id="categories" class="categories">
+            <div class="centered-horizontally">
+                <div style="text-align: center;">
+                    <h3>CATEGORIES</h3>
+                    <h2>Choose Your Favorites<span style="color: var(--peach);">.</span></h2>
+                    <h6 style="margin-top: 25px;">Choose the fine jewelry that you will shine in tomorrow.</h6>
+                </div>
+            </div>
+            <div class="space-between" style="margin-top: 50px;">
+                <div class="categories-container">
+                    <img src="Images/Categories/Necklaces.jpg" alt="" style="width: 370px; height: 502px;" class="categories-image" />
                     <div class="centered">
-                        <h2>Necklaces</h2>
+                        <h2 style="color: white;">Necklaces</h2>
                         <button class="categories-button">— Discover</button>
                     </div>
                 </div>
-                <div class="container">
-                    <img src="Images/Categories/Rings.jpg" alt="" style="width: 370px; height: 502px;" />
+                <div class="categories-container">
+                    <img src="Images/Categories/Rings.jpg" alt="" style="width: 370px; height: 502px;" class="categories-image" />
                     <div class="centered">
-                        <h2>Rings</h2>
+                        <h2 style="color: white;">Rings</h2>
                         <button class="categories-button">— Discover</button>
                     </div>
                 </div>
-                <div class="container">
-                    <img src="Images/Categories/Earrings.jpg" alt="" style="width: 370px; height: 502px;" />
+                <div class="categories-container">
+                    <img src="Images/Categories/Earrings.jpg" alt="" style="width: 370px; height: 502px;" class="categories-image" />
                     <div class="centered">
-                        <h2>Earrings</h2>
+                        <h2 style="color: white;">Earrings</h2>
                         <button class="categories-button">— Discover</button>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="promo-set">
+        <section id="promo-set" class="promo-set">
             <h3>SUMMER 2021</h3>
-            <h2>Aurora Prom Set.</h2>
+            <h2>Aurora Prom Set<span style="color: var(--peach);">.</span></h2>
             <h6>Perfect match with:</h6>
-            <img src="images/promo-set/yolanda.jpg" alt="" />
-            <h6>* Full set for $699</h6>
+            <img src="images/promo-set/yolanda.jpg" alt="" style="width: 120px; height: inherit;" />
+            <h6><span style="color: var(--peach);">*</span> Full set for <span style="color: var(--peach);">$699</span></h6>
         </section>
-        <section class="designer-jewelry">
-            <h3>DESIGNER JEWELRY</h3>
-            <h2 style="font-size: 90px;">Gentle Beauty in You.</h2>
-            <h6>We create fine jewelry that helps you stand out of the crowd:</h6>
-            <ul>
-                <li><p>Emphasizes your natural beauty.</p></li>
-                <li><p>Suits any outfits you prefer.</p></li>
-                <li><p>Delights you every day with its exclusive design.</p></li>
-            </ul>
-            <button>— Discover</button>
+        <section id="designer-jewelry" class="designer-jewelry">
+            <div style="max-width: 600px;">
+                <h3>DESIGNER JEWELRY</h3>
+                <h2 style="font-size: 90px; margin-top: 20px;">Gentle Beauty in You.</h2>
+                <h6 style="margin-top: 40px;">We create fine jewelry that helps you stand out of the crowd:</h6>
+                <ul>
+                    <li><p>Emphasizes your natural beauty.</p></li>
+                    <li><p>Suits any outfits you prefer.</p></li>
+                    <li><p>Delights you every day with its exclusive design.</p></li>
+                </ul>
+                <button>— Discover</button>
+            </div>
         </section>
-        <section class="store" id="store">
+        <section id="store" class="store">
             <h3>NEW IN</h3>
             <h2>New Collection.</h2>
             <h6>Shine bright in our new 2021 collection of fine jewelry!</h6>
@@ -152,7 +161,7 @@ else - paragraph class-->
                 </script>
             </div>
             <p style="color: red">!Тут Javascript</p>
-            <div class="shop-front earrings">
+            <div class="shop-front earrings space-between">
                 <div class="shop-item">
                     <img src="Images/Shop-Items/Butterfly.png" alt="" />
                     <h5>Bagels</h5>
@@ -178,7 +187,7 @@ else - paragraph class-->
                     <button>— Add to cart</button>
                 </div>
             </div>
-            <div class="shop-front rings">
+            <div class="shop-front rings space-between">
                 <div class="shop-item">
                     <img src="Images/Shop-Items/Butterfly.png" alt="" />
                     <h5>Butterfly</h5>
@@ -204,7 +213,7 @@ else - paragraph class-->
                     <button>— Add to cart</button>
                 </div>
             </div>
-            <div class="shop-front necklaces">
+            <div class="shop-front necklaces space-between">
                 <div class="shop-item">
                     <img src="Images/Shop-Items/Butterfly.png" alt="" />
                     <h5>Butterfly</h5>
@@ -237,23 +246,23 @@ else - paragraph class-->
         <section class="blog">
             <h3>BLOG</h3>
             <h2>Our News and Articles.</h2>
-            <div>
+            <div class="space-between">
                 <div class="article">
-                    <img src="Images/Blog/Blog1.jpg" alt="" style="width: 370px; height: 370px;" />
+                    <img src="Images/Blog/Blog1.jpg" alt="" style="width: 370px; height: 370px; object-fit: contain;" />
                     <h5>01 FEBRUARY 2021</h5>
                     <h4>The Most Romantic Picks</h4>
                     <p>Valentine's Day is approaching! If you have not yet decided on your outfit, we have picked the best jewelry sets that will look...</p>
                     <a><h3>READ MORE →</h3></a>
                 </div>
                 <div class="article">
-                    <img src="Images/Blog/Blog2.jpg" alt="" style="width: 370px; height: 370px;" />
+                    <img src="Images/Blog/Blog2.jpg" alt="" style="width: 370px; height: 370px; object-fit: contain;" />
                     <h3>15 MARCH 2021</h3>
                     <h4>Welcome a New Hot Trend</h4>
                     <p>Massive chains in necklaces and bracelets are a new hot trend for 2021. Read this article to learn how to wear and combine them ...</p>
                     <a><h3>READ MORE →</h3></a>
                 </div>
                 <div class="article">
-                    <img src="Images/Blog/Blog3.jpg" alt="" style="width: 370px; height: 370px;" />
+                    <img src="Images/Blog/Blog3.jpg" alt="" style="width: 370px; height: 370px; object-fit: contain;" />
                     <h3>01 APRIL 2021</h3>
                     <h4>Jewelry for Business Styles</h4>
                     <p>Some companies have strict dress code requirements, including accessories. Let's see what kind of jewelry you can still wear...</p>
@@ -261,32 +270,53 @@ else - paragraph class-->
                 </div>
             </div>
         </section>
-        <section class="testimonials" id="testimonials">
-            <h2 style="color:red">!Тут Jquery</h2>
+        <section id="testimonials">
+            <div class="testimonials"><h2 style="color:red">!Тут карусель</h2></div>
         </section>
-        <section class="partners">
-            <h3>OUR PARTNERS</h3>
-            <div>
-                <div><img src="Images/Partners/Partners.jpg" alt="" style="width: 370px; height: inherit;" /></div>
+        <section id="partners">
+            <div class="partners">
+                <h3>OUR PARTNERS</h3>
+                <div>
+                    <div><img src="Images/Partners/Partners.jpg" alt="" style="width: 370px; height: inherit;" /></div>
+                </div>
+                <div>
+                    <div><img src="Images/Icons/Macy's.svg" alt="" style="width: 100px; height: inherit;" /></div>
+                    <div><img src="Images/Icons/Zales.svg" alt="" style="width: 100px; height: inherit;" /></div>
+                    <div><img src="Images/Icons/Harrods.svg" alt="" style="width: 100px; height: inherit;" /></div>
+                    <div><img src="Images/Icons/Nordstrom.svg" alt="" style="width: 100px; height: inherit;" /></div>
+                    <div><img src="Images/Icons/Bloomingdale's.svg" alt="" style="width: 100px; height: inherit;" /></div>
+                    <div><img src="Images/Icons/Dillard's.svg" alt="" style="width: 100px; height: inherit;" /></div>
+                    <div><img src="Images/Icons/Nordstrom.svg" alt="" style="width: 100px; height: inherit;" /></div>
+                    <div><img src="Images/Icons/Neiman-Marcus.svg" alt="" style="width: 100px; height: inherit;" /></div>
+                </div>
             </div>
-            <div>
-                <div><img src="Images/Icons/Macy's.svg" alt="" style="width: 100px; height: inherit;" /></div>
-                <div><img src="Images/Icons/Zales.svg" alt="" style="width: 100px; height: inherit;" /></div>
-                <div><img src="Images/Icons/Harrods.svg" alt="" style="width: 100px; height: inherit;" /></div>
-                <div><img src="Images/Icons/Nordstrom.svg" alt="" style="width: 100px; height: inherit;" /></div>
-                <div><img src="Images/Icons/Bloomingdale's.svg" alt="" style="width: 100px; height: inherit;" /></div>
-                <div><img src="Images/Icons/Dillard's.svg" alt="" style="width: 100px; height: inherit;" /></div>
-                <div><img src="Images/Icons/Nordstrom.svg" alt="" style="width: 100px; height: inherit;" /></div>
-                <div><img src="Images/Icons/Neiman-Marcus.svg" alt="" style="width: 100px; height: inherit;" /></div>
-            </div>           
         </section>
-        <section class="FAQ">
-            <div>
+        <section id="FAQ">
+            <div class="FAQ">
                 <div>
                     <h4>FAQ</h4>
                     <h3>Need Help?</h3>
                     <p class="subtitle">If you have any questions, feel free to contact us in any convenient way.</p>
-                    <p style="color:red">!Тут JQuery</p>
+                    <button class="accordion">Where do you ship to?</button>
+                    <div class="panel">
+                        <p>We ship worldwide. To get info about shipping methods and delivery price and time, please contact our support.</p>
+                    </div>
+                    <button class="accordion">How can I make the order?</button>
+                    <div class="panel">
+                        <p>Simply add the items you like to your shopping cart, make the payment, and provide shipping details.</p>
+                    </div>
+                    <button class="accordion">Can I change my order after it is placed?</button>
+                    <div class="panel">
+                        <p>We ship orders quite quickly, so we can't guarantee that your request will be processed in time. Anyway, contact our support team, and they will find the suitable solution.</p>
+                    </div>
+                    <button class="accordion">Do you have offline stores?</button>
+                    <div class="panel">
+                        <p>We have a showroom in New York. Also, you can try and touch our jewelry in the partner stores like Macy's, Harrods, etc.</p>
+                    </div>
+                    <button class="accordion">Can I cancel my order?</button>
+                    <div class="panel">
+                        <p>Unfortunately, if your order has already been shipped, we can't cancel it. In all other cases, you can cancel the order by contacting our support team.</p>
+                    </div>
                 </div>
                 <div>
                     <img src="Images/FAQ/FAQ.jpg" alt="" style="width: 570px; height: inherit;" />
@@ -333,5 +363,6 @@ else - paragraph class-->
         </div>
         © Created by | All rights Reserved
     </footer>
+
 </body>
 </html>
