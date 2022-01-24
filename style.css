@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 :root {
     --dark-blue: #051F34;
     --dark-grey: #445665;
-    --dark-peach: #D9B5A1;
     --peach: #D9B5A1;
+    --lighter-peach: #E0C0B0;
     --light-peach: #051F34;
     --off-white: #F6F4F2;
 }
@@ -14,21 +15,37 @@ h2 {
     color: var(--dark-blue);
     font-weight: 200;
     kerning: -0.02px;
+    line-height: 1em;
     font-size: 54px;
+
+    margin: 20px 0px 0px 0px;
+    padding: 0;
 }
 
 h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     color: var(--peach);
+    font-weight: 800;
     font-size: 12px;
+    margin: 0;
+    padding: 0;
 }
 
-h4{
-
+h4 {
+    font-family: 'Sorts Mill Goudy', serif;
+    color: var(--dark-blue);
+    font-weight: 300;
+    font-size: 26px;
+    margin: 0;
+    padding: 0;
 }
 
-h5{
-
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-blue);
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
 }
 
 h6 {
@@ -37,49 +54,42 @@ h6 {
     color: var(--dark-grey);
     font-weight: 100;
     font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 p {
     font-family: 'Montserrat', sans-serif;
     color: var(--dark-grey);
-    font-weight: 100;
+    font-weight: 300;
+    line-height: 2em;
+    font-size: 16px;
+
+    margin: 0;
+    padding: 0;
 }
 
-peachc{
-    color:var(--peach);
-}
 button {
     font-family: 'Montserrat', sans-serif;
     color: white;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 16px;
-    background-color: var(--peach);
-    padding: 20px 25px 20px 25px;
+    background-color: var(--lighter-peach);
     border: 0px;
+    transition: 0.3s;
 }
 
 button:hover {
-    background-color: var(--dark-peach);
+    background-color: var(--peach);
 }
 
-main {
-    background-color: var(--off-white);
-    margin: 360px;
+body {
+    padding: 0px;
 }
 
-.categories-button{
-    color: var(--dark-grey);
-    background-color: white;
-}
-
-.categories-button:hover {
-    color: white;
-    background-color: var(--dark-blue);
-}
-
-.container {
-    position: relative;
-    text-align: center;
+.centered-horizontally {
+    display: flex;
+    justify-content: center;
 }
 
 .centered {
@@ -89,33 +99,143 @@ main {
     transform: translate(-50%, -50%);
 }
 
-section{
-    margin-bottom: 130px;
+.space-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
+/*header*/
 
 header {
+    margin: 0px 265px 0px 265px;
+    padding: 30px 15px 30px 15px;
+
+    top: 0px;
+    left:0px;
+    width: 10vw;
     position: absolute;
-    left: 0;
-    top: 0;
 }
 
-cover{
-    top: 0;
-    height: 631px;
+.header-div {
+    display: flex;
+    flex-direction: row;
 }
 
-.cover-div{
-    width: 570px;
+/*cover*/
+
+.cover {
+    padding: 120px 280px 140px 280px;
+
+    background-image: url("images/backgrounds/cover.png");
+    background-size: cover;
+}
+
+/*features*/
+
+.features {
+    padding: 70px 330.5px 70px 330.5px;
+}
+
+.features-hr {
+    border: 0;
+    border-top: 2px solid #E2DEDB;
+    border-radius: 1px;
+    width: 33px;
 }
 
 .features-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    padding: 75px 50px 75px 50px;
+    text-align: center;
 }
 
-.shop-front {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+/*best sellers*/
+
+.best-sellers {
+    padding: 70px 330.5px 70px 330.5px;
+}
+
+.shop-item{
+    padding: 40px 30px 40px 30px;
+}
+
+/*our collection*/
+
+.our-collection {
+    padding: 70px 330.5px 0px 330.5px;
+
+    background-image: url("images/backgrounds/our-collection.png");
+    background-size: cover;
+}
+
+/*categories*/
+
+.categories {
+    padding: 70px 330.5px 70px 330.5px;
+}
+
+.categories-container {
+    position: relative;
+    text-align: center;
+}
+
+.categories-container:hover {
+    background-color: var(--peach);
+    padding: 0px;
+}
+
+.categories-image:hover {
+    opacity: 0;
+    transition: 1s;
+}
+
+.categories-button {
+    opacity: 0;
+    padding: 16px 26px 17px 26px;
+    margin-top: 40px;
+}
+
+.categories-container:hover .categories-button {
+    opacity: 1;
+    color: var(--dark-grey);
+    background-color: white;
+}
+
+.categories-button:hover {
+    opacity: 1;
+    color: white;
+    background-color: var(--dark-blue);
+}
+
+/*promo set*/
+
+.promo-set {
+    padding: 150px 446.5px 150px 446.5px;
+}
+
+/*designer jewelery*/
+
+.designer-jewelry{
+    padding: 160px 366.5px 70px 366.5px;
+}
+
+/*store*/
+
+/*banner*/
+
+/*blog*/
+
+/*testimonials*/
+
+/*partners*/
+
+/*FAQ*/
+
+/*footer*/
+
+footer {
+    top: 0px;
+    left: 0px;
+    height: 120px;
+    width: 100%;
 }
