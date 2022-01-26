@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="header" style="display: flex;">
-        <img src="images/icons/aurora.svg" alt="the logo of the store" style="width: 77px; height: inherit;" />
-        <nav style="display: flex; flex-direction: row; justify-content: center; ">
-            <div><a href="#best-sellers"><p>Trending</p></a></div>
-            <div><a href="#store"><p>Collection</p></a></div>
-            <div><a href="#testimonials"><p>Testimonials</p></a></div>
-            <div><a href="#footer"><p>Contact Us</p></a></div>
-        </nav>
+    <header id="header" class="header">
+        <img src="images/icons/aurora.svg" alt="the logo of the store" class="header-icon" />
+        <nav class="centered">
+            <a href="#best-sellers"><p class="nav-link">Trending</p></a>
+            <a href="#store"><p div class="nav-link">Collection</p></a>
+            <a href="#testimonials"><p div class="nav-link">Testimonials</p></a>
+            <a href="#footer"><p div class="nav-link">Contact Us</p></a>
+        </nav>         
     </header>
     <main>
         <section id="cover" class="cover">
-            <div style="max-width: 570px;">
+            <div class="cover-div">
                 <h3>JEWELRY</h3>
                 <h2 style="font-size: 90px;">Shine Bright With Aurora<span style="color: var(--peach);">.</span></h2>
                 <h6 style="margin-top: 40px;">Every day is your special day with our fine jewelry!</h6>
@@ -273,21 +273,21 @@
         <section id="testimonials">
             <div class="testimonials"><h2 style="color:red">!Тут карусель</h2></div>
         </section>
-        <section id="partners">
-            <div class="partners">
-                <h3>OUR PARTNERS</h3>
+        <section id="partners" class="partners">
+            <h3>OUR PARTNERS</h3>
+            <div class="partners-div">
                 <div>
-                    <div><img src="Images/Partners/Partners.jpg" alt="" style="width: 370px; height: inherit;" /></div>
+                    <div><img src="images/backgrounds/partners.jpg" alt="" style="width: 370px; height: inherit;" /></div>
                 </div>
-                <div>
-                    <div><img src="Images/Icons/Macy's.svg" alt="" style="width: 100px; height: inherit;" /></div>
-                    <div><img src="Images/Icons/Zales.svg" alt="" style="width: 100px; height: inherit;" /></div>
-                    <div><img src="Images/Icons/Harrods.svg" alt="" style="width: 100px; height: inherit;" /></div>
-                    <div><img src="Images/Icons/Nordstrom.svg" alt="" style="width: 100px; height: inherit;" /></div>
-                    <div><img src="Images/Icons/Bloomingdale's.svg" alt="" style="width: 100px; height: inherit;" /></div>
-                    <div><img src="Images/Icons/Dillard's.svg" alt="" style="width: 100px; height: inherit;" /></div>
-                    <div><img src="Images/Icons/Nordstrom.svg" alt="" style="width: 100px; height: inherit;" /></div>
-                    <div><img src="Images/Icons/Neiman-Marcus.svg" alt="" style="width: 100px; height: inherit;" /></div>
+                <div class="partners-icons">
+                    <div class="partner-icon"><a href="https://www.macys.com/"><img src="images/icons/macy's.svg" alt="" style="width: 100px; height: inherit;" /></a></div>
+                    <div class="partner-icon"><a href="https://www.zales.com/"><img src="images/icons/zales.svg" alt="" style="width: 100px; height: inherit;" /></a></div>
+                    <div class="partner-icon"><a href="https://www.harrods.com/"><img src="images/icons/harrods.svg" alt="" style="width: 100px; height: inherit;" /></a></div>
+                    <div class="partner-icon"><a href="https://www.nordstrom.com/"><img src="images/icons/nordstrom.svg" alt="" style="width: 100px; height: inherit;" /></a></div>
+                    <div class="partner-icon"><a href=""><img src="images/icons/bloomingdale's.svg" alt="" style="width: 100px; height: inherit;" /></a></div>
+                    <div class="partner-icon"><a href=""><img src="images/icons/dillard's.svg" alt="" style="width: 100px; height: inherit;" /></a></div>
+                    <div class="partner-icon"><a href=""><img src="images/icons/diamond-chapter.svg" alt="" style="width: 100px; height: inherit;" /></a></div>
+                    <div class="partner-icon"><a href=""><img src="images/icons/neiman-marcus.svg" alt="" style="width: 100px; height: inherit;" /></a></div>
                 </div>
             </div>
         </section>
@@ -363,6 +363,5 @@
         </div>
         © Created by | All rights Reserved
     </footer>
-
 </body>
 </html>
