@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
@@ -6,7 +6,7 @@
     --dark-grey: #445665;
     --peach: #D9B5A1;
     --lighter-peach: #E0C0B0;
-    --light-peach: #051F34;
+    --light-peach: #EFE8E3;
     --off-white: #F6F4F2;
 }
 
@@ -64,7 +64,6 @@ p {
     font-weight: 300;
     line-height: 2em;
     font-size: 16px;
-
     margin: 0;
     padding: 0;
 }
@@ -108,27 +107,56 @@ body {
 /*header*/
 
 header {
-    margin: 0px 265px 0px 265px;
-    padding: 30px 15px 30px 15px;
-
     top: 0px;
-    left:0px;
-    width: 10vw;
+    left: 0px;
+    width: 100vw;
+    box-sizing: border-box;
     position: absolute;
+    padding: 30px 280px 30px 280px;
+    display:flex;
+    flex-direction: row;
 }
 
-.header-div {
+.header-icon {
+    width: 77px;
+    height: inherit;
+    align-self: flex-start;
+}
+
+.nav-div {
+    align-self: center;
+}
+
+nav{
     display: flex;
     flex-direction: row;
 }
 
+.nav-link {
+    margin: 5px 7.5px 5px 7.5px;
+    text-decoration: blink;
+}
+
+.nav-link:hover{
+    color: var(--dark-blue);
+}
 /*cover*/
 
 .cover {
-    padding: 120px 280px 140px 280px;
-
+    padding-right: 366.5px;
+    padding-bottom: 140px;
+    padding-left: 366.5px;
+    height: 43.74vw;
+    box-sizing: border-box;
     background-image: url("images/backgrounds/cover.png");
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.cover-div {
+    max-width: 570px;
 }
 
 /*features*/
@@ -229,10 +257,29 @@ header {
 
 /*partners*/
 
+.partners{
+    padding: 70px 366.5px 70px 366.5px;
+}
+
+.partners-div{
+    display: flex;
+    flex-direction: row;
+}
+
+.partners-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.partner-icon{
+    width: 170px;
+    height: 170px;
+    background-color: var(--light-peach);
+}
 /*FAQ*/
-
 /*footer*/
-
 footer {
     top: 0px;
     left: 0px;
