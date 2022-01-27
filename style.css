@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Sorts+Mill+Goudy:ital@0;1&display=swap');
 
 :root {
     --dark-blue: #051F34;
     --dark-grey: #445665;
+    --light-gray: #C6C9CC;
+    --faint-gray: #E2DEDB;
     --peach: #D9B5A1;
     --lighter-peach: #E0C0B0;
     --light-peach: #EFE8E3;
@@ -25,7 +26,7 @@ h2 {
 h3 {
     font-family: 'Montserrat';
     color: var(--peach);
-    font-weight: 800;
+    font-weight: 700;
     font-size: 12px;
     margin: 0;
     padding: 0;
@@ -43,6 +44,7 @@ h4 {
 h5 {
     font-family: 'Montserrat', sans-serif;
     color: var(--dark-blue);
+    font-weight: 500;
     font-size: 18px;
     margin: 0;
     padding: 0;
@@ -61,7 +63,7 @@ h6 {
 p {
     font-family: 'Montserrat', sans-serif;
     color: var(--dark-grey);
-    font-weight: 300;
+    font-weight: 500;
     line-height: 2em;
     font-size: 16px;
     margin: 0;
@@ -78,11 +80,12 @@ button {
     transition: 0.3s;
 }
 
-button:hover {
-    background-color: var(--peach);
-}
+    button:hover {
+        background-color: var(--peach);
+    }
 
 body {
+    margin: 0px;
     padding: 0px;
 }
 
@@ -104,6 +107,16 @@ body {
     justify-content: space-between;
 }
 
+/*design*/
+
+.peach {
+    color: var(--peach);
+}
+
+.hero-title {
+    font-size: 90px;
+}
+
 /*header*/
 
 header {
@@ -112,8 +125,8 @@ header {
     width: 100vw;
     box-sizing: border-box;
     position: absolute;
-    padding: 30px 280px 30px 280px;
-    display:flex;
+    padding: 30px 366.5px 30px 366.5px;
+    display: flex;
     flex-direction: row;
 }
 
@@ -134,22 +147,26 @@ nav{
 
 .nav-link {
     margin: 5px 7.5px 5px 7.5px;
-    text-decoration: blink;
+    text-decoration: none;
+    font-size: 15px;
 }
 
-.nav-link:hover{
-    color: var(--dark-blue);
-}
+    .nav-link:hover{
+        color: var(--dark-blue);
+    }
+
 /*cover*/
 
 .cover {
     padding-right: 366.5px;
     padding-bottom: 140px;
-    padding-left: 366.5px;
-    height: 43.74vw;
+    padding-left: 366.5px;  
     box-sizing: border-box;
+    aspect-ratio: 2437/1066;
+
     background-image: url("images/backgrounds/cover.png");
     background-size: cover;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -167,7 +184,7 @@ nav{
 
 .features-hr {
     border: 0;
-    border-top: 2px solid #E2DEDB;
+    border-top: 2px solid var(--faint-gray);
     border-radius: 1px;
     width: 33px;
 }
@@ -207,15 +224,15 @@ nav{
     text-align: center;
 }
 
-.categories-container:hover {
-    background-color: var(--peach);
-    padding: 0px;
-}
+    .categories-container:hover {
+        background-color: var(--peach);
+        padding: 0px;
+    }
 
-.categories-image:hover {
-    opacity: 0;
-    transition: 1s;
-}
+    .categories-image:hover {
+        opacity: 0;
+        transition: 1s;
+    }
 
 .categories-button {
     opacity: 0;
@@ -229,11 +246,11 @@ nav{
     background-color: white;
 }
 
-.categories-button:hover {
-    opacity: 1;
-    color: white;
-    background-color: var(--dark-blue);
-}
+    .categories-button:hover {
+        opacity: 1;
+        color: white;
+        background-color: var(--dark-blue);
+    }
 
 /*promo set*/
 
@@ -241,17 +258,68 @@ nav{
     padding: 150px 446.5px 150px 446.5px;
 }
 
+.promo-set-div {
+    aspect-ratio: 1414/636;
+    background-image: url(images/backgrounds/promo-set.png);
+    background-size: cover;
+}
+
 /*designer jewelery*/
 
-.designer-jewelry{
+.designer-jewelry {
+    box-sizing: border-box;
+    aspect-ratio: 2340/1080;
     padding: 160px 366.5px 70px 366.5px;
+    background-image: url(images/backgrounds/designer-jewelry.png);
 }
 
 /*store*/
 
+.store{
+    padding: 70px 366.5px 70px 366.5px;
+}
+
+.store-buttons{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.store-button{
+    padding: 15px 20px 15px 20px;
+    background-color: transparent;
+    font-weight: 500;
+    color: var(--dark-grey);
+}
+
+    .store-button:hover {
+        background-color: transparent;
+        color: var(--dark-blue);
+    }
+
+/*.store-button {
+    border-bottom: 2px solid var(--peach);
+    border-radius: 1px;
+}*/
+
+.store-hr {
+    border: 0;
+    border-top: 1px solid var(--faint-gray);
+    margin: -1px 0 0 0;
+    padding: 0;
+}
+
 /*banner*/
 
+.banner {
+    padding: 70px 366.5px 70px 366.5px;
+}
+
 /*blog*/
+
+.blog {
+    padding: 70px 366.5px 40px 366.5px;
+}
 
 /*testimonials*/
 
@@ -278,8 +346,48 @@ nav{
     height: 170px;
     background-color: var(--light-peach);
 }
+
+.partner-logo {
+    width: 100px;
+    height: inherit;
+}
+
 /*FAQ*/
+
+.faq{
+    padding: 70px 366.5px 120px 366.5px;
+
+}
+
+.accordion {
+    font-family: 'Sorts Mill Goudy', serif;
+    color: var(--dark-blue);
+    font-weight: 300;
+    font-size: 26px;
+    padding: 20px 0px 20px 0px;
+    background-color: var(--off-white);
+}
+
+    .accordion:hover {
+        background-color: var(--off-white);       
+    }
+
+.faq-hr {
+    margin: 0;
+    border: 0;
+    border-top: 1px solid var(--light-gray);
+    border-radius: 0.5px;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
 /*footer*/
+
 footer {
     top: 0px;
     left: 0px;
