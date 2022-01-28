@@ -14,7 +14,7 @@ else - paragraph class-->
     <title>Website project for SoftServe</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="storeDisplay()">
     <header id="header" class="header">
         <img src="images/icons/aurora.svg" alt="the logo of the store" class="header-icon" />
         <nav class="centered">
@@ -32,17 +32,6 @@ else - paragraph class-->
                 <h6 style="margin-top: 40px;">Every day is your special day with our fine jewelry!</h6>
                 <button style="padding: 16px 26px 17px 26px; margin-top: 55px;">— Shop</button>
             </div>
-        </section>
-        <section>
-            <p style="font-weight: 100">Aaaaaaaa</p>
-            <p style="font-weight: 200">Aaaaaaaa</p>
-            <p style="font-weight: 300">Aaaaaaaa</p>
-            <p style="font-weight: 400">Aaaaaaaa</p>
-            <p style="font-weight: 500">Aaaaaaaa</p>
-            <p style="font-weight: 600">Aaaaaaaa</p>
-            <p style="font-weight: 700">Aaaaaaaa</p>
-            <p style="font-weight: 800">Aaaaaaaa</p>
-            <p style="font-weight: 900">Aaaaaaaa</p>
         </section>
         <section id="features" class="features">
             <div class="space-between">
@@ -170,6 +159,17 @@ else - paragraph class-->
             <h6>Shine bright in our new 2021 collection of fine jewelry!</h6>
             <div>
                 <div class="store-buttons">
+                    <div class="store-button">
+                        <label><input type="radio" id="earringsButton" name="shop" value="earrings" onclick="storeDisplay()" checked>Earrings</label>
+                    </div>
+                    <div class="store-button">  
+                        <label><input type="radio" id="ringsButton" name="shop" value="rings" onclick="storeDisplay()">Rings</label>
+                    </div>
+                    <div class="store-button">    
+                        <label><input type="radio" id="necklacesButton" name="shop" value="necklaces" onclick="storeDisplay()">Necklaces</label>
+                    </div>
+                </div>
+                <!--<div c>
                     <div>
                         <button onclick="storeDisplay(1)" class="store-button">Earrings</button>
                     </div>
@@ -179,7 +179,7 @@ else - paragraph class-->
                     <div>
                         <button onclick="storeDisplay(3)" class="store-button">Necklaces</button>
                     </div>
-                </div>
+                </div>-->
             </div>      
             <hr class="store-hr">
             <div id="earrings" class="shop-front space-between">

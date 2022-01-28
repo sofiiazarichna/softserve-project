@@ -3,6 +3,7 @@
 :root {
     --dark-blue: #051F34;
     --dark-grey: #445665;
+    --lighter-gray: #65737F;
     --light-gray: #C6C9CC;
     --faint-gray: #E2DEDB;
     --peach: #D9B5A1;
@@ -285,22 +286,28 @@ nav{
     justify-content: center;
 }
 
-.store-button{
+.store-button {
     padding: 15px 20px 15px 20px;
+    border-bottom: 2px solid transparent;
     background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
     font-weight: 500;
-    color: var(--dark-grey);
+    font-size: 16px;
 }
 
-    .store-button:hover {
-        background-color: transparent;
-        color: var(--dark-blue);
-    }
+input{
+    display: none;
+}
 
-/*.store-button {
-    border-bottom: 2px solid var(--peach);
-    border-radius: 1px;
-}*/
+label{
+    color: var(--lighter-gray);
+}
+    
+label:hover {
+    background-color: transparent;
+    color: var(--dark-blue);        
+}
 
 .store-hr {
     border: 0;

@@ -1,19 +1,14 @@
-var id;
-
-function storeDisplay(x) {
-    if (x === 1) {
-        id = "earrings";
+function storeDisplay() {
+    document.getElementById("earrings").style.display = "none";
+    document.getElementById("rings").style.display = "none";
+    document.getElementById("necklaces").style.display = "none";
+    if (earringsButton.checked == true) {
+        document.getElementById("earrings").style.display = "block";
     }
-    if (x === 2) {
-        id = "rings";
+    if (ringsButton.checked == true) {
+        document.getElementById("rings").style.display = "block";
     }
-    if (x === 3) {
-        id = "necklaces";
-    }
-    var y = document.getElementById(id);
-    if (y.style.display === "none") {
-        y.style.display = "block";
-    } else {
-        y.style.display = "none";
+    if (necklacesButton.checked == true) {
+        document.getElementById("necklaces").style.display = "block";
     }
 }
