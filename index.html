@@ -25,7 +25,7 @@ else - paragraph class-->
         </nav>
     </header>
     <main>
-        <section id="cover" class="cover">
+        <section id="cover" class="cover" onload="">
             <div class="cover-div">
                 <h3>JEWELRY</h3>
                 <h2 class="hero-title">Shine Bright With Aurora<span class="peach">.</span></h2>
@@ -36,21 +36,21 @@ else - paragraph class-->
         <section id="features" class="features">
             <div class="space-between">
                 <div class="features-div">
-                    <img src="images/icons/gem.svg" alt="a graphic of a gem" style="width: 100px; height: inherit;" />
-                    <h4 style="margin-top: 20px;">Gems and Natural Stones</h4>
-                    <div style="margin-top: 15px; margin-bottom: 15px;"><div width: 33px;><hr class="features-hr"></div></div>
+                    <img src="images/icons/gem.svg" alt="a graphic of a gem" class="features-div-img" />
+                    <h4 class="features-div-h4">Gems and Natural Stones</h4>
+                    <div class="features-hr-div"><div width: 33px;><hr class="features-hr"></div></div>
                     <p>Our fine jewelry will never darken or wear off. With proper care, you can wear it for 50+ years and pass it to your heirs!</p>
                 </div>
                 <div class="features-div">
-                    <img src="images/icons/necklace.svg" alt="a graphic of a necklace" style="width: 100px; height: inherit;" />
-                    <h4 style="margin-top: 20px;">585 Gold</h4>
-                    <div style="margin-top: 15px; margin-bottom: 15px;"><div width: 33px;><hr class="features-hr"></div></div>
+                    <img src="images/icons/necklace.svg" alt="a graphic of a necklace" class="features-div-img" />
+                    <h4 class="features-div-h4">585 Gold</h4>
+                    <div class="features-hr-div"><div width: 33px;><hr class="features-hr"></div></div>
                     <p>We use precious and semi-precious stones: diamonds, emeralds, sapphires, etc. and also work with Swarovski crystals.</p>
                 </div>
                 <div class="features-div">
-                    <img src="images/icons/earrings.svg" alt="a graphic of earrings" style="width: 100px; height: inherit;" />
-                    <h4 style="margin-top: 20px;">Designer Collections</h4>
-                    <div style="margin-top: 15px; margin-bottom: 15px;"><div width: 33px;><hr class="features-hr"></div></div>
+                    <img src="images/icons/earrings.svg" alt="a graphic of earrings" class="features-div-img" />
+                    <h4 class="features-div-h4">Designer Collections</h4>
+                    <div class="features-hr-div"><div width: 33px;><hr class="features-hr"></div></div>
                     <p>We create exquisite fine jewelry. Each collection has a soul and a certain message that resonates in the hearts of our customers.</p>
                 </div>
             </div>
@@ -71,7 +71,7 @@ else - paragraph class-->
                     <button class="shop-item-button">— Add to cart</button>
                 </div>
                 <div class="shop-item centered-horizontally">
-                    <img src="images/shop-Items/golden-Sun.png" alt="two earrings " />
+                    <img src="images/shop-items/golden-sun.png" alt="two earrings " />
                     <h5 class="shop-item-h5">Golden Sun</h5>
                     <h3 class="shop-item-h3">$199,00</h3>
                     <button class="shop-item-button">— Add to cart</button>
@@ -109,21 +109,21 @@ else - paragraph class-->
             </div>
             <div class="space-between" style="margin-top: 50px;">
                 <div class="categories-container">
-                    <img src="images/categories/necklaces.jpg" alt="" style="width: 370px; height: 502px;" class="categories-image" />
+                    <img src="images/categories/necklaces.jpg" alt="" style="width: 370px; height: 502px;" class="categories-img" />
                     <div class="centered">
                         <h2 style="color: white;">Necklaces</h2>
                         <button class="categories-button">— Discover</button>
                     </div>
                 </div>
                 <div class="categories-container">
-                    <img src="images/categories/rings.jpg" alt="" style="width: 370px; height: 502px;" class="categories-image" />
+                    <img src="images/categories/rings.jpg" alt="" style="width: 370px; height: 502px;" class="categories-img" />
                     <div class="centered">
                         <h2 style="color: white;">Rings</h2>
                         <button class="categories-button">— Discover</button>
                     </div>
                 </div>
                 <div class="categories-container">
-                    <img src="images/categories/earrings.jpg" alt="" style="width: 370px; height: 502px;" class="categories-image" />
+                    <img src="images/categories/earrings.jpg" alt="" style="width: 370px; height: 502px;" class="categories-img" />
                     <div class="centered">
                         <h2 style="color: white;">Earrings</h2>
                         <button class="categories-button">— Discover</button>
@@ -162,13 +162,13 @@ else - paragraph class-->
             <div>
                 <div class="store-buttons">
                     <div id="earringsButtonDiv" class="store-button">
-                        <label><input type="radio" id="earringsButton" name="shop" value="earrings" onclick="storeDisplay()" checked>Earrings</label>
+                        <label id="earringsButtonLabel"><input type="radio" id="earringsButton" name="shop" value="earrings" onclick="storeDisplay()" checked>Earrings</label>
                     </div>
                     <div id="ringsButtonDiv" class="store-button">
-                        <label><input type="radio" id="ringsButton" name="shop" value="rings" onclick="storeDisplay()">Rings</label>
+                        <label id="ringsButtonLabel"><input type="radio" id="ringsButton" name="shop" value="rings" onclick="storeDisplay()">Rings</label>
                     </div>
                     <div id="necklacesButtonDiv" class="store-button">
-                        <label><input type="radio" id="necklacesButton" name="shop" value="necklaces" onclick="storeDisplay()">Necklaces</label>
+                        <label id="necklacesButtonLabel"><input type="radio" id="necklacesButton" name="shop" value="necklaces" onclick="storeDisplay()">Necklaces</label>
                     </div>
                 </div>
             </div>
@@ -182,7 +182,7 @@ else - paragraph class-->
                         <button class="shop-item-button">— Add to cart</button>
                     </div>
                     <div class="shop-item centered-horizontally">
-                        <img src="images/shop-Items/dalida.png" alt="two earrings " />
+                        <img src="images/shop-items/dalida.png" alt="two earrings " />
                         <h5 class="shop-item-h5">Dalida</h5>
                         <h3 class="shop-item-h3">$199,00</h3>
                         <button class="shop-item-button">— Add to cart</button>
@@ -210,7 +210,7 @@ else - paragraph class-->
                         <button class="shop-item-button">— Add to cart</button>
                     </div>
                     <div class="shop-item centered-horizontally">
-                        <img src="images/shop-Items/genny.png" alt="two earrings " />
+                        <img src="images/shop-items/genny.png" alt="two earrings " />
                         <h5 class="shop-item-h5">Genny</h5>
                         <h3 class="shop-item-h3">$599,00</h3>
                         <button class="shop-item-button">— Add to cart</button>
@@ -238,7 +238,7 @@ else - paragraph class-->
                         <button class="shop-item-button">— Add to cart</button>
                     </div>
                     <div class="shop-item centered-horizontally">
-                        <img src="images/shop-Items/sky.png" alt="two earrings " />
+                        <img src="images/shop-items/sky.png" alt="two earrings " />
                         <h5 class="shop-item-h5">Sky</h5>
                         <h3 class="shop-item-h3">$299,00</h3>
                         <button class="shop-item-button">— Add to cart</button>
@@ -267,35 +267,43 @@ else - paragraph class-->
             </div>
         </section>
         <section id="blog" class="blog">
-            <h3>BLOG</h3>
-            <h2>Our News and Articles<span class="peach">.</span></h2>
-            <div class="space-between">
+            <div class="centered-horizontally">
+                <h3>BLOG</h3>
+                <h2>Our News and Articles<span class="peach">.</span></h2>
+                <h6>Check out our latest articles to learn more about our brand and get tips on jewelry care.</h6>
+            </div>
+            <div class="article-div space-between">
                 <div class="article">
-                    <img src="Images/Blog/Blog1.jpg" alt="" style="width: 370px; height: 370px; object-fit: contain;" />
-                    <h3>01 FEBRUARY 2021</h3>
-                    <h4>The Most Romantic Picks</h4>
-                    <p>Valentine's Day is approaching! If you have not yet decided on your outfit, we have picked the best jewelry sets that will look...</p>
-                    <a><h3>READ MORE →</h3></a>
+                    <img src="images/blog/blog1.jpg" alt="" class="article-img" />
+                    <h3 class="small article-h3">01 FEBRUARY 2021</h3>
+                    <h4 class="article-h4">The Most Romantic Picks</h4>
+                    <p class="article-p">Valentine's Day is approaching! If you have not yet decided on your outfit, we have picked the best jewelry sets that will look...</p>
+                    <a><h3 class="small read-more">READ MORE <span class="peach">→</span></h3></a>
                 </div>
                 <div class="article">
-                    <img src="Images/Blog/Blog2.jpg" alt="" style="width: 370px; height: 370px; object-fit: contain;" />
-                    <h3>15 MARCH 2021</h3>
-                    <h4>Welcome a New Hot Trend</h4>
-                    <p>Massive chains in necklaces and bracelets are a new hot trend for 2021. Read this article to learn how to wear and combine them ...</p>
-                    <a><h3>READ MORE →</h3></a>
+                    <img src="images/blog/blog2.jpg" alt="" class="article-img" />
+                    <h3 class="small article-h3">15 MARCH 2021</h3>
+                    <h4 class="article-h4">Welcome a New Hot Trend</h4>
+                    <p class="article-p">Massive chains in necklaces and bracelets are a new hot trend for 2021. Read this article to learn how to wear and combine them ...</p>
+                    <a><h3 class="small read-more">READ MORE <span class="peach">→</span></h3></a>
                 </div>
                 <div class="article">
-                    <img src="Images/Blog/Blog3.jpg" alt="" style="width: 370px; height: 370px; object-fit: contain;" />
-                    <h3>01 APRIL 2021</h3>
-                    <h4>Jewelry for Business Styles</h4>
-                    <p>Some companies have strict dress code requirements, including accessories. Let's see what kind of jewelry you can still wear...</p>
-                    <a><h3>READ MORE →</h3></a>
+                    <img src="images/blog/blog3.jpg" alt="" class="article-img" />
+                    <h3 class="small article-h3">01 APRIL 2021</h3>
+                    <h4 class="article-h4">Jewelry for Business Styles</h4>
+                    <p class="article-p">Some companies have strict dress code requirements, including accessories. Let's see what kind of jewelry you can still wear...</p>
+                    <a><h3 class="small read-more">READ MORE <span class="peach">→</span></h3></a>
                 </div>
             </div>
         </section>
-        <section id="testimonials">
-            <div class="testimonials"><h2 style="color:red">!Тут карусель</h2></div>
-
+        <section id="testimonials" class="testimonials">
+            <div class="carousel">
+                <div class="testimonials-div centered-horizontally">
+                    <img src="images/icons/alice-meterson.svg" class="testimonials-img" />
+                    <h5 class="testimonials-h5">Alice Meterson</h5>
+                    <q>I love every item made by Aurora. Every time I open their website, I want to buy everything! The quality is very good, and looking at these items, there's no doubt it's the designer jewelry.</q>
+                </div>
+            </div>
         </section>
         <section id="partners" class="partners">
             <h3>OUR PARTNERS</h3>
@@ -355,7 +363,7 @@ else - paragraph class-->
         </section>
     </main>
     <footer id="footer">
-        <img src="Images/Icons/Aurora.svg" alt="" style="width: 100px; height: inherit;" />
+        <img src="images/icons/aurora.svg" alt="" style="width: 100px; height: inherit;" />
         <table>
             <tr>
                 <th>Store</th>

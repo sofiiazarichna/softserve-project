@@ -119,12 +119,16 @@ body {
     font-size: 90px;
 }
 
+.small{
+    font-size: 11px;
+}
+
 /*header*/
 
 header {
     top: 0px;
     left: 0px;
-    width: 100vw;
+    width: 100%;
     box-sizing: border-box;
     position: absolute;
     padding: 30px 366.5px 30px 366.5px;
@@ -193,6 +197,22 @@ nav{
     padding: 70px 330.5px 70px 330.5px;
 }
 
+
+
+.features-div {
+    padding: 75px 50px 75px 50px;
+    text-align: center;
+}
+
+.features-div-img {
+    width: 100px;
+    height: inherit;
+}
+
+.features-div-h4 {
+    margin-top: 20px;
+}
+
 .features-hr {
     border: 0;
     border-top: 2px solid var(--faint-gray);
@@ -200,9 +220,9 @@ nav{
     width: 33px;
 }
 
-.features-div {
-    padding: 75px 50px 75px 50px;
-    text-align: center;
+.features-hr-div {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 /*best sellers*/
@@ -254,7 +274,7 @@ nav{
         padding: 0px;
     }
 
-    .categories-image:hover {
+    .categories-img:hover {
         opacity: 0;
         transition: 1s;
     }
@@ -300,11 +320,11 @@ nav{
 
 /*store*/
 
-.store{
+.store {
     padding: 70px 366.5px 70px 366.5px;
 }
 
-.store-buttons{
+.store-buttons {
     margin-top: 50px;
     display: flex;
     justify-content: center;
@@ -320,11 +340,11 @@ nav{
     font-size: 16px;
 }
 
-input{
+input {
     display: none;
 }
 
-label{
+label {
     color: var(--lighter-gray);
 }
 
@@ -333,10 +353,10 @@ label:hover {
     color: var(--dark-blue);
 }
 
-    label:checked {
-        background-color: transparent;
-        color: var(--dark-blue);
-    }
+.checked-label {
+    background-color: transparent;
+    color: var(--dark-blue);        
+}
 
 .checked-radio  {
     background-color: transparent;
@@ -364,15 +384,72 @@ label:hover {
     padding: 70px 366.5px 40px 366.5px;
 }
 
+.article-div {
+    margin-top: 50px;
+}
+
+.article-img {
+    width: 370px;
+    height: 370px;
+    object-fit: cover;
+}
+
+.article-h3 {
+    margin-top: 20px;
+}
+
+.article-h4 {
+    margin-top: 20px;
+}
+
+.article-p {
+    margin-top: 20px;
+}
+
+.read-more {
+    margin-top: 20px;
+    color: var(--dark-blue);
+}
+
 /*testimonials*/
+
+.testimonials {
+    padding: 100px 366.5px 150px 366.5px;
+}
+
+.testimonials-div {
+    width: 770px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.testimonials-img {
+    height: 130px;
+    width: inherit;
+}
+
+.testimonials-h5 {
+    margin-top: 20px;
+}
+
+q {
+    font-style: italic;
+    font-family: 'Sorts Mill Goudy', serif;
+    color: var(--dark-grey);
+    font-weight: 100;
+    font-size: 30px;
+    margin: 25px 0 0 0;
+    padding: 0;
+    quotes: "" "";
+}
 
 /*partners*/
 
-.partners{
+.partners {
     padding: 70px 366.5px 70px 366.5px;
 }
 
-.partners-div{
+.partners-div {
     display: flex;
     flex-direction: row;
 }
@@ -384,7 +461,7 @@ label:hover {
     flex-wrap: wrap;
 }
 
-.partner-icon{
+.partner-icon {
     width: 170px;
     height: 170px;
     background-color: var(--light-peach);
@@ -397,7 +474,7 @@ label:hover {
 
 /*FAQ*/
 
-.faq{
+.faq {
     padding: 70px 366.5px 120px 366.5px;
 
 }
