@@ -71,6 +71,10 @@ p {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 button {
     font-family: 'Montserrat', sans-serif;
     color: white;
@@ -153,7 +157,6 @@ nav{
 
 .nav-link {
     margin: 5px 7.5px 5px 7.5px;
-    text-decoration: none;
     font-size: 15px;
 }
 
@@ -231,6 +234,15 @@ nav{
     padding: 70px 330.5px 70px 330.5px;
 }
 
+.best-sellers-div {
+    max-width: 770px;
+    text-align: center;
+}
+
+.best-sellers-h6 {
+    margin-top: 25px;
+}
+
 .shop-item{
     padding: 40px 30px 40px 30px;
 }
@@ -300,10 +312,11 @@ nav{
 /*promo set*/
 
 .promo-set {
-    padding: 150px 446.5px 150px 446.5px;
+    padding: 150px 366.5px 150px 366.5px;
 }
 
 .promo-set-div {
+    max-width: 1170px;
     aspect-ratio: 1414/636;
     background-image: url(images/backgrounds/promo-set.png);
     background-size: cover;
@@ -316,6 +329,12 @@ nav{
     aspect-ratio: 2340/1080;
     padding: 160px 366.5px 70px 366.5px;
     background-image: url(images/backgrounds/designer-jewelry.png);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.designer-jewelry-div {
+    max-width: 570px;
 }
 
 /*store*/
@@ -334,36 +353,22 @@ nav{
     padding: 15px 20px 15px 20px;
     border-bottom: 2px solid transparent;
     background-color: transparent;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: var(--lighter-gray);
     font-weight: 500;
     font-size: 16px;
 }
 
-input {
-    display: none;
-}
+    .store-button:hover {
+        background-color: transparent;
+        color: var(--dark-blue);
+    }
 
-label {
-    color: var(--lighter-gray);
-}
-
-label:hover {
-    background-color: transparent;
-    color: var(--dark-blue);
-}
-
-.checked-label {
-    background-color: transparent;
-    color: var(--dark-blue);        
-}
-
-.checked-radio  {
+.store-button-active {
     background-color: transparent;
     color: var(--dark-blue);
     border-bottom: 2px solid var(--peach);
     border-radius: 1px;
-    }
+}
 
 .store-hr {
     border: 0;
@@ -371,6 +376,7 @@ label:hover {
     margin: -1px 0 30px 0;
     padding: 0;
 }
+
 
 /*banner*/
 
@@ -438,6 +444,7 @@ q {
     color: var(--dark-grey);
     font-weight: 100;
     font-size: 30px;
+    text-align: center;
     margin: 25px 0 0 0;
     padding: 0;
     quotes: "" "";

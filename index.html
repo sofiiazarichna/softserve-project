@@ -14,14 +14,14 @@ else - paragraph class-->
     <title>Website project for SoftServe</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="storeDisplay()">
+<body onload="storeDisplay('earrings'); storeActiveButton('earrings-button')">
     <header id="header" class="header">
         <img src="images/icons/aurora.svg" alt="the logo of the store" class="header-icon" />
         <nav class="centered">
             <a href="#best-sellers"><p class="nav-link">Trending</p></a>
-            <a href="#store"><p div class="nav-link">Collection</p></a>
-            <a href="#testimonials"><p div class="nav-link">Testimonials</p></a>
-            <a href="#footer"><p div class="nav-link">Contact Us</p></a>
+            <a href="#store"><p class="nav-link">Collection</p></a>
+            <a href="#testimonials"><p class="nav-link">Testimonials</p></a>
+            <a href="#footer"><p class="nav-link">Contact Us</p></a>
         </nav>
     </header>
     <main>
@@ -57,10 +57,10 @@ else - paragraph class-->
         </section>
         <section id="best-sellers" class="best-sellers">
             <div class="centered-horizontally">
-                <div style="max-width: 770px; text-align: center;">
+                <div class="best-sellers-div">
                     <h3>TRENDING</h3>
                     <h2>Best-Selling Items<span class="peach">.</span></h2>
-                    <h6 style="margin-top: 25px;">In this section, you will find fine jewelry chosen by hundreds of our customers around the world. Best price guaranteed.</h6>
+                    <h6 class="best-sellers-h6">In this section, you will find fine jewelry chosen by hundreds of our customers around the world. Best price guaranteed.</h6>
                 </div>
             </div>
             <div class="shop-front space-between">
@@ -141,7 +141,7 @@ else - paragraph class-->
             </div>
         </section>
         <section id="designer-jewelry" class="designer-jewelry">
-            <div style="max-width: 570px;">
+            <div class="designer-jewelry-div">
                 <h3>DESIGNER JEWELRY</h3>
                 <h2 style="font-size: 90px; margin-top: 20px;">Gentle Beauty in You<span class="peach">.</span></h2>
                 <h6 style="margin-top: 40px;">We create fine jewelry that helps you stand out of the crowd:</h6>
@@ -161,16 +161,10 @@ else - paragraph class-->
             </div>
             <div>
                 <div class="store-buttons">
-                    <div id="earringsButtonDiv" class="store-button">
-                        <label id="earringsButtonLabel"><input type="radio" id="earringsButton" name="shop" value="earrings" onclick="storeDisplay()" checked>Earrings</label>
-                    </div>
-                    <div id="ringsButtonDiv" class="store-button">
-                        <label id="ringsButtonLabel"><input type="radio" id="ringsButton" name="shop" value="rings" onclick="storeDisplay()">Rings</label>
-                    </div>
-                    <div id="necklacesButtonDiv" class="store-button">
-                        <label id="necklacesButtonLabel"><input type="radio" id="necklacesButton" name="shop" value="necklaces" onclick="storeDisplay()">Necklaces</label>
-                    </div>
-                </div>
+                    <button id="earrings-button" class="store-button" onclick="storeDisplay('earrings'); storeActiveButton('earrings-button')">Earrings</button>
+                    <button id="rings-button" class="store-button" onclick="storeDisplay('rings'); storeActiveButton('rings-button')">Rings</button>
+                    <button id="necklaces-button" class="store-button" onclick="storeDisplay('necklaces'); storeActiveButton('necklaces-button')">Necklaces</button>
+                </div>     
             </div>
             <hr class="store-hr">
             <div id="earrings">
@@ -274,7 +268,7 @@ else - paragraph class-->
             </div>
             <div class="article-div space-between">
                 <div class="article">
-                    <img src="images/blog/blog1.jpg" alt="" class="article-img" />
+                    <img src="images/blog/blog1.jpg" alt="a close-up of a woman's ear wearing an earring'" class="article-img" />
                     <h3 class="small article-h3">01 FEBRUARY 2021</h3>
                     <h4 class="article-h4">The Most Romantic Picks</h4>
                     <p class="article-p">Valentine's Day is approaching! If you have not yet decided on your outfit, we have picked the best jewelry sets that will look...</p>
@@ -301,7 +295,7 @@ else - paragraph class-->
                 <div class="testimonials-div centered-horizontally">
                     <img src="images/icons/alice-meterson.svg" class="testimonials-img" />
                     <h5 class="testimonials-h5">Alice Meterson</h5>
-                    <q>I love every item made by Aurora. Every time I open their website, I want to buy everything! The quality is very good, and looking at these items, there's no doubt it's the designer jewelry.</q>
+                    <q><span class="peach">«</span>I love every item made by Aurora. Every time I open their website, I want to buy everything! The quality is very good, and looking at these items, there's no doubt it's the designer jewelry.<span class="peach">»</span></q>
                 </div>
             </div>
         </section>
@@ -363,43 +357,39 @@ else - paragraph class-->
         </section>
     </main>
     <footer id="footer">
-        <img src="images/icons/aurora.svg" alt="" style="width: 100px; height: inherit;" />
-        <table>
-            <tr>
-                <th>Store</th>
-                <th>Get in touch</th>
-                <th>Care</th>
-            </tr>
-            <tr>
-                <td>
-                    <ul>
-                        <li>Trending</li>
-                        <li>Collection</li>
-                        <li>Testimonials</li>
-                        <li>Contacts</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li><a href="mailto:aurora@email.com">aurora@email.com</a></li>
-                        <li><a href="tel:+12345678900">+1 (234) 567 89 00</a></li>
-                        <li><a href="https://goo.gl/maps/shVdrM1BepCcqThk7">310 E 67th St, New York, NY 10065, USA</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Certificates</li>
-                        <li>FAQ</li>
-                        <li>Legal & Privacy</li>
-                        <li>Returns</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
+        <img src="images/icons/aurora.svg" alt="the logo of the store" style="width: 100px; height: inherit;" />
+        <div>
+            <div>
+                Store
+                <div>
+                    <a>Trending</a>
+                    <a>Collection</a>
+                    <a>Testimonials</a>
+                    <a>Contacts</a>
+                </div>
+            </div>
+            <div>
+                Get in touch
+                <div>
+                    <a href="mailto:aurora@email.com">aurora@email.com</a>
+                    <a href="tel:+12345678900">+1 (234) 567 89 00</a>
+                    <a href="https://goo.gl/maps/shVdrM1BepCcqThk7">310 E 67th St, New York, NY 10065, USA</a>
+                </div>
+            </div>
+            <div>
+                Care
+                <div>
+                    <a>Certificates</a>
+                    <a>FAQ</a>
+                    <a>Legal & Privacy</a>
+                    <a>Returns</a>
+                </div>
+            </div>
+        </div>
         <div>
             <p style="color:red;">missing icons</p>
         </div>
-        © Created by | All rights Reserved
+        <h3>© Created by | All rights Reserved</h3>
     </footer>
     <script src="script.js"></script>
 </body>
