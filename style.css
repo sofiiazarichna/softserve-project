@@ -111,6 +111,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /*design*/
@@ -205,6 +206,8 @@ nav{
 .features-div {
     padding: 75px 50px 75px 50px;
     text-align: center;
+    box-sizing: border-box;
+    
 }
 
 .features-div-img {
@@ -286,10 +289,19 @@ nav{
         padding: 0px;
     }
 
-    .categories-img:hover {
-        opacity: 0;
-        transition: 1s;
-    }
+.categories-img {
+    width: 370px;
+    height: 502px;
+}
+
+.categories-img:hover {
+    opacity: 0;
+    transition: 1s;
+}
+
+.categories-h2 {
+    color: white;
+}
 
 .categories-button {
     opacity: 0;
@@ -382,6 +394,18 @@ nav{
 
 .banner {
     padding: 70px 366.5px 70px 366.5px;
+}
+
+.banner-left {
+    padding: 15px 25px 15px 25px;
+    background-color: var(--light-peach);
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.banner-img{
+    max-width: 220px;
+    height: inherit;
 }
 
 /*blog*/
