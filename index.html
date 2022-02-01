@@ -12,29 +12,41 @@ else - paragraph class-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website project for SoftServe</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body onload="storeDisplay('earrings'); storeActiveButton('earrings-button')">
-    <header id="header" class="header">
-        <img src="images/icons/aurora.svg" alt="the logo of the store" class="header-icon" />
-        <nav class="centered">
-            <a href="#best-sellers"><p class="nav-link">Trending</p></a>
-            <a href="#store"><p class="nav-link">Collection</p></a>
-            <a href="#testimonials"><p class="nav-link">Testimonials</p></a>
-            <a href="#footer"><p class="nav-link">Contact Us</p></a>
-        </nav>
+    <link rel="stylesheet" href="styles/header.css">
+    <header id="header" class="header centered-horizontally">
+        <div class="header-width">
+            <img src="images/icons/aurora.svg" alt="the logo of the store" class="header-icon" />
+            <nav class="centered">
+                <a href="#best-sellers"><p class="nav-link">Trending</p></a>
+                <a href="#store"><p class="nav-link">Collection</p></a>
+                <a href="#testimonials"><p class="nav-link">Testimonials</p></a>
+                <a href="#footer"><p class="nav-link">Contact Us</p></a>
+            </nav>
+            <div class="burger-icon" onclick="">
+                <hr id="burger-icon-top-bun" class="burger-icon-bar" />
+                <hr id="burger-icon-patty" class="burger-icon-bar" />
+                <hr id="burger-icon-bottom-bun" class="burger-icon-bar" />
+            </div>
+        </div>
     </header>
     <main>
-        <section id="cover" class="cover" onload="">
-            <div class="cover-div">
-                <h3>JEWELRY</h3>
-                <h2 class="hero-title">Shine Bright With Aurora<span class="peach">.</span></h2>
-                <h6 class="cover-subtitle">Every day is your special day with our fine jewelry!</h6>
-                <button class="cover-button">— Shop</button>
+        <link rel="stylesheet" href="styles/cover.css">
+        <section id="cover" class="cover centered-horizontally">
+            <div class="cover-width">
+                <div class="cover-div">
+                    <h3>JEWELRY</h3>
+                    <h2 class="hero-title">Shine Bright With Aurora<span class="peach">.</span></h2>
+                    <h6 class="cover-subtitle">Every day is your special day with our fine jewelry!</h6>
+                    <button class="cover-button">— Shop</button>
+                </div>
             </div>
         </section>
-        <section id="features" class="features">
-            <div class="space-between">
+        <link rel="stylesheet" href="styles/features.css">
+        <section id="features" class="features centered-horizontally">
+            <div class="features-width">
                 <div class="features-div">
                     <img src="images/icons/gem.svg" alt="a graphic of a gem" class="features-div-img" />
                     <h4 class="features-div-h4">Gems and Natural Stones</h4>
@@ -65,25 +77,25 @@ else - paragraph class-->
             </div>
             <div class="shop-front space-between">
                 <div class="shop-item centered-horizontally">
-                    <img src="images/shop-items/butterfly.png" alt="a butterfly-shaped earring" class="centered-horizontally" />
+                    <img src="images/shop-items/butterfly.png" alt="a butterfly-shaped earring" class="responsive" />
                     <h5 class="shop-item-h5">Butterfly</h5>
                     <h3 class="shop-item-h3">$99,00</h3>
                     <button class="shop-item-button">— Add to cart</button>
                 </div>
                 <div class="shop-item centered-horizontally">
-                    <img src="images/shop-items/golden-sun.png" alt="two earrings " />
+                    <img src="images/shop-items/golden-sun.png" alt="two earrings " class="responsive" />
                     <h5 class="shop-item-h5">Golden Sun</h5>
                     <h3 class="shop-item-h3">$199,00</h3>
                     <button class="shop-item-button">— Add to cart</button>
                 </div>
                 <div class="shop-item centered-horizontally">
-                    <img src="images/shop-items/elegy.png" alt="" />
+                    <img src="images/shop-items/elegy.png" alt="" class="responsive" />
                     <h5 class="shop-item-h5">Elegy</h5>
                     <h3 class="shop-item-h3">$199,00</h3>
                     <button class="shop-item-button">— Add to cart</button>
                 </div>
                 <div class="shop-item centered-horizontally">
-                    <img src="images/shop-items/moonlight.png" alt="" />
+                    <img src="images/shop-items/moonlight.png" alt="" class="responsive" />
                     <h5 class="shop-item-h5">Moonlight</h5>
                     <h3 class="shop-item-h3">$199,00</h3>
                     <button class="shop-item-button">— Add to cart</button>
@@ -164,87 +176,87 @@ else - paragraph class-->
                     <button id="earrings-button" class="store-button" onclick="storeDisplay('earrings'); storeActiveButton('earrings-button')">Earrings</button>
                     <button id="rings-button" class="store-button" onclick="storeDisplay('rings'); storeActiveButton('rings-button')">Rings</button>
                     <button id="necklaces-button" class="store-button" onclick="storeDisplay('necklaces'); storeActiveButton('necklaces-button')">Necklaces</button>
-                </div>     
+                </div>
             </div>
             <hr class="store-hr">
             <div id="earrings">
                 <div class="shop-front space-between">
                     <div class="shop-item centered-horizontally">
-                        <img src="images/shop-items/bagels.png" alt="a butterfly-shaped earring" class="centered-horizontally" />
+                        <img src="images/shop-items/bagels.png" alt="a butterfly-shaped earring" class="responsive" />
                         <h5 class="shop-item-h5">Bagels</h5>
                         <h3 class="shop-item-h3">$199,00</h3>
                         <button class="shop-item-button">— Add to cart</button>
                     </div>
                     <div class="shop-item centered-horizontally">
-                        <img src="images/shop-items/dalida.png" alt="two earrings " />
+                        <img src="images/shop-items/dalida.png" alt="two earrings " class="responsive" />
                         <h5 class="shop-item-h5">Dalida</h5>
                         <h3 class="shop-item-h3">$199,00</h3>
                         <button class="shop-item-button">— Add to cart</button>
                     </div>
                     <div class="shop-item centered-horizontally">
-                        <img src="images/shop-items/fantasy.png" alt="" />
+                        <img src="images/shop-items/fantasy.png" alt="" class="responsive" />
                         <h5 class="shop-item-h5">Fantasy</h5>
                         <h3 class="shop-item-h3">$249,00</h3>
                         <button class="shop-item-button">— Add to cart</button>
                     </div>
                     <div class="shop-item centered-horizontally">
-                        <img src="images/shop-items/keys.png" alt="" />
+                        <img src="images/shop-items/keys.png" alt="" class="responsive" />
                         <h5 class="shop-item-h5">Keys</h5>
                         <h3 class="shop-item-h3">$299,00</h3>
                         <button class="shop-item-button">— Add to cart</button>
                     </div>
                 </div>
-            </div>      
+            </div>
             <div id="rings">
                 <div class="shop-front space-between">
                     <div class="shop-item centered-horizontally">
-                        <img src="images/shop-items/jillian.png" alt="a butterfly-shaped earring" class="centered-horizontally" />
+                        <img src="images/shop-items/jillian.png" alt="a butterfly-shaped earring" class="responsive" />
                         <h5 class="shop-item-h5">Jillian</h5>
                         <h3 class="shop-item-h3">$399,00</h3>
                         <button class="shop-item-button">— Add to cart</button>
                     </div>
                     <div class="shop-item centered-horizontally">
-                        <img src="images/shop-items/genny.png" alt="two earrings " />
+                        <img src="images/shop-items/genny.png" alt="two earrings " class="responsive" />
                         <h5 class="shop-item-h5">Genny</h5>
                         <h3 class="shop-item-h3">$599,00</h3>
                         <button class="shop-item-button">— Add to cart</button>
                     </div>
                     <div class="shop-item centered-horizontally">
-                        <img src="images/shop-items/yolanda.png" alt="" />
+                        <img src="images/shop-items/yolanda.png" alt="" class="responsive" />
                         <h5 class="shop-item-h5">Yolanda</h5>
                         <h3 class="shop-item-h3">$199,00</h3>
                         <button class="shop-item-button">— Add to cart</button>
                     </div>
                     <div class="shop-item centered-horizontally">
-                        <img src="images/shop-items/eternity.png" alt="" />
+                        <img src="images/shop-items/eternity.png" alt="" class="responsive" />
                         <h5 class="shop-item-h5">Eternity</h5>
                         <h3 class="shop-item-h3">$249,00</h3>
                         <button class="shop-item-button">— Add to cart</button>
                     </div>
                 </div>
-            </div>    
+            </div>
             <div id="necklaces">
                 <div class="shop-front space-between">
                     <div class="shop-item centered-horizontally">
-                        <img src="images/shop-items/cleopatra.png" alt="a butterfly-shaped earring" class="centered-horizontally" />
+                        <img src="images/shop-items/cleopatra.png" alt="a butterfly-shaped earring" class="responsive" />
                         <h5 class="shop-item-h5">Cleopatra</h5>
                         <h3 class="shop-item-h3">$399,00</h3>
                         <button class="shop-item-button">— Add to cart</button>
                     </div>
                     <div class="shop-item centered-horizontally">
-                        <img src="images/shop-items/sky.png" alt="two earrings " />
+                        <img src="images/shop-items/sky.png" alt="two earrings " class="responsive" />
                         <h5 class="shop-item-h5">Sky</h5>
                         <h3 class="shop-item-h3">$299,00</h3>
                         <button class="shop-item-button">— Add to cart</button>
                     </div>
                     <div class="shop-item centered-horizontally">
-                        <img src="images/shop-items/athena.png" alt="" />
+                        <img src="images/shop-items/athena.png" alt="" class="responsive" />
                         <h5 class="shop-item-h5">Athena</h5>
                         <h3 class="shop-item-h3">$199,00</h3>
                         <button class="shop-item-button">— Add to cart</button>
                     </div>
                     <div class="shop-item centered-horizontally">
-                        <img src="images/shop-items/delight.png" alt="" />
+                        <img src="images/shop-items/delight.png" alt="" class="responsive" />
                         <h5 class="shop-item-h5">Delight</h5>
                         <h3 class="shop-item-h3">$399,00</h3>
                         <button class="shop-item-button">— Add to cart</button>
@@ -254,7 +266,7 @@ else - paragraph class-->
         </section>
         <section id="banner" class="banner space-between">
             <div class="banner-left">
-                <img src="images/other-images/banner.png" class="banner-img"/>
+                <img src="images/other-images/banner.png" class="banner-img" />
                 <p>—  Earrings</p>
             </div>
             <div class="banner-right">

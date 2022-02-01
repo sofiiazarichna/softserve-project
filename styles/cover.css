@@ -1,0 +1,48 @@
+.cover {
+    padding-top: 312.11px;
+    padding-bottom: 140px;
+    box-sizing: border-box;
+    background-position: right;
+    background-image: url("../images/backgrounds/cover.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.cover-subtitle {
+    margin-top: 40px;
+}
+
+.cover-width {
+    width: 1170px;
+    display: flex;
+    align-items: flex-start; 
+}
+
+.cover-div {
+    width: 570px;
+}
+
+.cover-button {
+    padding: 16px 26px 17px 26px;
+    margin-top: 55px;
+}
+
+@media(max-width: 1250px) {
+    .cover{
+        align-items: flex-start;
+    }
+    .cover-width {
+        width: auto;
+    }
+    .cover {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 767px){
+    .cover-div {
+        width: auto;
+    }
+}
