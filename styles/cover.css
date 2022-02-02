@@ -30,14 +30,13 @@
 
 @media(max-width: 1250px) {
     .cover{
-        align-items: flex-start;
-    }
-    .cover-width {
-        width: auto;
-    }
-    .cover {
         padding-left: 40px;
         padding-right: 40px;
+        align-items: flex-start;
+    }
+
+    .cover-width {
+        width: 100%;
     }
 }
 

@@ -132,97 +132,14 @@ body {
     font-size: 11px;
 }
 
-/*best sellers*/
-
-.best-sellers {
-    padding: 70px 330.5px 70px 330.5px;
-}
-
-.best-sellers-div {
-    max-width: 770px;
-    text-align: center;
-}
-
-.best-sellers-h6 {
-    margin-top: 25px;
-}
-
-.shop-item{
-    padding: 40px 30px 40px 30px;
-    box-sizing: border-box;
-    max-width: 665px;
-}
-
-.shop-item-h5 {
-    margin-top: 40px;
-}
-
-.shop-item-h3 {
-    font-weight: 700;
-    font-size: 21px;
-    margin: 16px 0px 24px 0px;
-}
-
-.shop-item-button {
-    padding: 12px 20px 13px 20px;
-}
-
 /*our collection*/
 
 .our-collection {
     padding: 70px 330.5px 0px 330.5px;
 
-    background-image: url("images/backgrounds/our-collection.png");
+    background-image: url("../images/backgrounds/our-collection.png");
     background-size: cover;
 }
-
-/*categories*/
-
-.categories {
-    padding: 70px 330.5px 70px 330.5px;
-}
-
-.categories-container {
-    position: relative;
-    text-align: center;
-}
-
-    .categories-container:hover {
-        background-color: var(--peach);
-        padding: 0px;
-    }
-
-.categories-img {
-    width: 370px;
-    height: 502px;
-}
-
-.categories-img:hover {
-    opacity: 0;
-    transition: 1s;
-}
-
-.categories-h2 {
-    color: white;
-}
-
-.categories-button {
-    opacity: 0;
-    padding: 16px 26px 17px 26px;
-    margin-top: 40px;
-}
-
-.categories-container:hover .categories-button {
-    opacity: 1;
-    color: var(--dark-grey);
-    background-color: white;
-}
-
-    .categories-button:hover {
-        opacity: 1;
-        color: white;
-        background-color: var(--dark-blue);
-    }
 
 /*promo set*/
 

@@ -63,8 +63,9 @@ nav {
         padding-left: 40px;
         padding-right: 40px;
     }
+
     .header-width {
-        width: calc(100% - 80px);
+        width: 100%;
     }
 }
 
@@ -74,6 +75,7 @@ nav {
         flex-direction: column;
         justify-content: space-between;
     }
+
     nav {
         display: none;
     }

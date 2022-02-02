@@ -43,7 +43,7 @@
         padding-right: 40px;
     }
     .features-width{
-        width: auto;
+        width: 100%;
     }
 }
 
@@ -64,6 +64,6 @@
     .features-div {
         padding: 45px 35px 45px 35px;
         box-sizing: border-box;
-        max-width: 719.5px;
+        width: 100%;
     }
 }
