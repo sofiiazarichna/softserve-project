@@ -1,45 +1,22 @@
 .categories {
-    padding: 70px 330.5px 70px 330.5px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.categories-width {
+    width: 1200px;
+    margin-top: 50px;
 }
 
 .categories-container {
+    margin-left: 15px;
+    margin-right: 15px;
     position: relative;
     text-align: center;
+    box-sizing: border-box;
+    width: 33.33%;
 }
-
-    .categories-container:hover {
-        background-color: var(--peach);
-        padding: 0px;
-    }
 
 .categories-img {
-    width: 370px;
-    height: 502px;
-}
 
-    .categories-img:hover {
-        opacity: 0;
-        transition: 1s;
-    }
-
-.categories-h2 {
-    color: white;
-}
-
-.categories-button {
-    opacity: 0;
-    padding: 16px 26px 17px 26px;
-    margin-top: 40px;
-}
-
-.categories-container:hover .categories-button {
-    opacity: 1;
-    color: var(--dark-grey);
-    background-color: white;
-}
-
-.categories-button:hover {
-    opacity: 1;
-    color: white;
-    background-color: var(--dark-blue);
 }

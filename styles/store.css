@@ -1,0 +1,38 @@
+.store {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.store-buttons {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.store-button {
+    padding: 15px 20px 15px 20px;
+    border-bottom: 2px solid transparent;
+    background-color: transparent;
+    color: var(--lighter-gray);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+    .store-button:hover {
+        background-color: transparent;
+        color: var(--dark-blue);
+    }
+
+.store-button-active {
+    background-color: transparent;
+    color: var(--dark-blue);
+    border-bottom: 2px solid var(--peach);
+    border-radius: 1px;
+}
+
+.store-hr {
+    border: 0;
+    border-top: 1px solid var(--faint-gray);
+    margin: -1px 0 30px 0;
+    padding: 0;
+}

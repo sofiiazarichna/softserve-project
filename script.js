@@ -2,7 +2,7 @@ function storeDisplay(str) {
     document.getElementById("earrings").style.display = "none";
     document.getElementById("rings").style.display = "none";
     document.getElementById("necklaces").style.display = "none";
-    document.getElementById(str).style.display = "block";
+    document.getElementById(str).style.display = "flex";
 }
 
 function storeActiveButton(str) {

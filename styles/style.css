@@ -75,6 +75,15 @@ a {
     text-decoration: none;
 }
 
+svg {
+    fill: var(--dark-blue);
+    transition: 0.3s;
+}
+
+svg:hover {
+    fill: var(--peach);
+}
+
 button {
     font-family: 'Montserrat', sans-serif;
     color: white;
@@ -92,19 +101,13 @@ button {
 body {
     margin: 0px;
     padding: 0px;
+    background-color: var(--off-white);
 }
 
 .centered-horizontally {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .space-between {
@@ -117,8 +120,6 @@ body {
     width: 100%;
     height: auto;
 }
-
-/*design*/
 
 .peach {
     color: var(--peach);
@@ -170,45 +171,6 @@ body {
 }
 
 /*store*/
-
-.store {
-    padding: 70px 366.5px 70px 366.5px;
-}
-
-.store-buttons {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-}
-
-.store-button {
-    padding: 15px 20px 15px 20px;
-    border-bottom: 2px solid transparent;
-    background-color: transparent;
-    color: var(--lighter-gray);
-    font-weight: 500;
-    font-size: 16px;
-}
-
-    .store-button:hover {
-        background-color: transparent;
-        color: var(--dark-blue);
-    }
-
-.store-button-active {
-    background-color: transparent;
-    color: var(--dark-blue);
-    border-bottom: 2px solid var(--peach);
-    border-radius: 1px;
-}
-
-.store-hr {
-    border: 0;
-    border-top: 1px solid var(--faint-gray);
-    margin: -1px 0 30px 0;
-    padding: 0;
-}
-
 
 /*banner*/
 
@@ -292,76 +254,4 @@ q {
     margin: 25px 0 0 0;
     padding: 0;
     quotes: "" "";
-}
-
-/*partners*/
-
-.partners {
-    padding: 70px 366.5px 70px 366.5px;
-}
-
-.partners-div {
-    display: flex;
-    flex-direction: row;
-}
-
-.partners-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.partner-icon {
-    width: 170px;
-    height: 170px;
-    background-color: var(--light-peach);
-}
-
-.partner-logo {
-    width: 100px;
-    height: inherit;
-}
-
-/*FAQ*/
-
-.faq {
-    padding: 70px 366.5px 120px 366.5px;
-
-}
-
-.accordion {
-    font-family: 'Sorts Mill Goudy', serif;
-    color: var(--dark-blue);
-    font-weight: 300;
-    font-size: 26px;
-    padding: 20px 0px 20px 0px;
-    background-color: transparent;
-}
-
-    .accordion:hover {
-        background-color: transparent;       
-    }
-
-.faq-hr {
-    margin: 0;
-    border: 0;
-    border-top: 1px solid var(--light-gray);
-    border-radius: 0.5px;
-}
-
-.panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
-}
-
-/*footer*/
-
-footer {
-    top: 0px;
-    left: 0px;
-    height: 120px;
-    width: 100%;
 }

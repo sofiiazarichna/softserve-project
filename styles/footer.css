@@ -1,0 +1,71 @@
+footer {
+    top: 0px;
+    left: 0px;
+    height: 120px;
+    width: 100%;
+}
+
+.table {
+    width: 1200px;
+}
+
+.column {
+    width: 33.33%;
+}
+
+.icon-display {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-div {
+    margin: 0 7.5px 15px 7.5px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+#instagram-icon {
+    width: 18px;
+    height: inherit;
+}
+
+#twitter-icon {
+    width: 18px;
+    height: inherit;
+}
+
+#youtube-icon {
+    width: 20px;
+    height: inherit;
+}
+
+@media (max-width: 1280px) {
+    footer {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .table {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .table {
+        flex-wrap: wrap;
+    }
+
+    .column {
+        padding-top: 50px;
+        width: 100%;
+    }
+
+    .icon-display {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}

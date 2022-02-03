@@ -12,9 +12,6 @@ header {
 
 .header-width {
     width: 1200px;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
 }
 
 .header-icon {
@@ -25,11 +22,11 @@ header {
 
 .nav-div {
     align-self: center;
+    justify-self: center;
 }
 
 nav {
     display: flex;
-    flex-direction: row;
 }
 
 .burger-icon {
@@ -37,8 +34,6 @@ nav {
     width: 40px;
     height: 40px;
     padding: 12px 8px 12px 8px;
-
-    align-self: flex-end;
     display: none;
 }
 
