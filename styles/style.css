@@ -151,7 +151,7 @@ body {
 .promo-set-div {
     max-width: 1170px;
     aspect-ratio: 1414/636;
-    background-image: url(images/backgrounds/promo-set.png);
+    background-image: url(../images/backgrounds/promo-set.png);
     background-size: cover;
 }
 
@@ -161,7 +161,7 @@ body {
     box-sizing: border-box;
     aspect-ratio: 2340/1080;
     padding: 160px 366.5px 70px 366.5px;
-    background-image: url(images/backgrounds/designer-jewelry.png);
+    background-image: url(../images/backgrounds/designer-jewelry.png);
     display: flex;
     justify-content: flex-end;
 }
