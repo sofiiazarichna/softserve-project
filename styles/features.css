@@ -49,8 +49,8 @@
 
 @media (max-width: 991px) {
     .features-width {
-        justify-content: center;
         flex-wrap: wrap;
+        justify-content: center;
     }
     .features-div {
         padding: 55px 40px 55px 40px;

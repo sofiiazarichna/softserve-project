@@ -27,6 +27,10 @@
     height: inherit;
 }
 
+.out-of-stock .shop-item-img{
+    filter: /*grayscale(0%);*/
+}
+
 .shop-item-h5 {
     margin-top: 40px;
 }
