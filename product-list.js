@@ -51,10 +51,10 @@
         if (products[order].stock == 0) {
             document.getElementById(htmlId).innerHTML += `
             <div class="shop-item centered-horizontally">
-                <img src="${products[order].imgUrl}" alt="${products[order].imgAlt}" class="shop-item-img responsive out-of-stock" />
+                <img src="${products[order].imgUrl}" alt="${products[order].imgAlt}" class="out-of-stock-shop-item-img responsive" />
                 <h5 class="shop-item-h5">${products[order].name}</h5>
-                <h3 class="shop-item-h3 out-of-stock">$${parseInt(products[order].price).toFixed(2)}</h3>
-                <button class="shop-item-button out-of-stock">Out of stock</button>
+                <h3 class="out-of-stock-h3 ">$${parseInt(products[order].price).toFixed(2)}</h3>
+                <button class="out-of-stock-shop-item-button ">Out of stock</button>
             </div>`;
         }
         else {
