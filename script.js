@@ -12,18 +12,18 @@ function storeActiveButton(str) {
     document.getElementById(str).classList.add("store-button-active");
 }
 
-var temp = 5;
+var openButton = 5;
 
 function accordionDisplay(x) {
-    if (x === temp) {
-        temp = 5;
+    if (x === openButton) {
+        openButton = 5;
         document.getElementById(x).style.display = "none";
     }
     else {
-        if (temp !== 5) {
-        document.getElementById(temp).style.display = "none";
+        if (openButton !== 5) {
+            document.getElementById(temp).style.display = "none";
         }
-        temp = x;
+        openButton = x;
         document.getElementById(x).style.display = "block";
     }
 }
