@@ -51,7 +51,7 @@
         if (products[order].stock == 0) {
             document.getElementById(htmlId).innerHTML += `
             <div class="shop-item centered-horizontally">
-                <img src="${products[order].imgUrl}" alt="${products[order].imgAlt}" style="filter: grayscale(75%);" class="shop-item-img responsive" />
+                <img src="${products[order].imgUrl}" alt="${products[order].imgAlt}" style="filter: grayscale(75%);" class="shop-item-img responsive out-of-stock" />
                 <h5 class="shop-item-h5">${products[order].name}</h5>
                 <h3 class="shop-item-h3">$${parseInt(products[order].price).toFixed(2)}</h3>
                 <button class="shop-item-button">Out of stock</button>
