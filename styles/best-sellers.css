@@ -29,6 +29,8 @@
 
 .out-of-stock-shop-item-img{
     filter: grayscale(75%);
+    max-width: 210px;
+    height: inherit;
 }
 
 .out-of-stock-shop-item-h3 {
@@ -40,6 +42,7 @@
 
 .out-of-stock-shop-item-button {
     background-color: var(--gray-peach);
+    padding: 12px 20px 13px 20px;
 }
 
 .shop-item-h5 {
