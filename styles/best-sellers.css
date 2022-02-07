@@ -28,7 +28,15 @@
 }
 
 .out-of-stock .shop-item-img{
-    filter: /*grayscale(0%);*/
+    filter: grayscale(75%);
+}
+
+.out-of-stock .h3 {
+    color: var(--gray-peach);
+}
+
+.out-of-stock .shop-item-button {
+    background-color: var(--gray-peach);
 }
 
 .shop-item-h5 {
