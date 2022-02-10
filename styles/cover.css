@@ -1,16 +1,12 @@
-.cover {
+#cover {
     padding-top: 312.11px;
     padding-bottom: 140px;
     box-sizing: border-box;
-    background-position: left;
+    background-position: 75% 0%;
     background-image: url("../images/backgrounds/cover.png");
     background-size: cover;
     display: flex;
     align-items: center;
-}
-
-.cover-subtitle {
-    margin-top: 40px;
 }
 
 .cover-width {
@@ -19,17 +15,25 @@
     align-items: flex-start; 
 }
 
-.cover-div {
+.cover-container {
     width: 570px;
 }
 
-.cover-button {
+h2.cover {
+    margin-top: 20px;
+}
+
+h6.cover {
+    margin-top: 40px;
+}
+
+button.cover {
     padding: 16px 26px 17px 26px;
     margin-top: 55px;
 }
 
 @media(max-width: 1250px) {
-    .cover{
+    #cover{
         padding-left: 40px;
         padding-right: 40px;
         align-items: flex-start;
@@ -41,7 +45,7 @@
 }
 
 @media (max-width: 767px){
-    .cover-div {
+    .cover-container {
         width: auto;
     }
 }

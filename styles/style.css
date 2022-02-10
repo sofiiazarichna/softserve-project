@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Sorts+Mill+Goudy:ital@0;1&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --dark-blue: #051F34;
     --dark-grey: #445665;
@@ -17,10 +21,9 @@ h2 {
     font-family: 'Sorts Mill Goudy', serif;
     color: var(--dark-blue);
     font-weight: 200;
-    kerning: -0.02px;
     line-height: 1em;
     font-size: 54px;
-
+    margin: 0;
     padding: 0;
 }
 
@@ -135,15 +138,6 @@ body {
 
 .small{
     font-size: 11px;
-}
-
-/*our collection*/
-
-.our-collection {
-    padding: 70px 330.5px 0px 330.5px;
-
-    background-image: url("../images/backgrounds/our-collection.png");
-    background-size: cover;
 }
 
 /*promo set*/

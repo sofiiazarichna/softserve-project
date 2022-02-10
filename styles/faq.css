@@ -1,5 +1,18 @@
 .faq {
-    padding: 70px 366.5px 120px 366.5px;
+    padding-top: 70px;
+    padding-bottom: 120px;
+}
+
+.faq-width {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.faq-accordion-div {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .plus-icon {
@@ -62,4 +75,10 @@
     background-color: white;
     display: none;
     overflow: hidden;
+}
+
+.faq-img {
+    width: 570px;
+    padding-left: 15px;
+    padding-right: 15px;
 }

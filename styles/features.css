@@ -1,4 +1,4 @@
-.features {
+#features {
     padding-top: 70px;
     padding-bottom: 70px;
 }
@@ -16,33 +16,31 @@
     width: clamp(280px, 370px, 450px);
 }
 
-.features-div-img {
+img.features {
     width: 100px;
     height: inherit;
 }
 
-.features-div-h4 {
+h4.features {
     margin-top: 20px;
 }
 
-.features-hr {
+hr.features {
     border: 0;
     border-top: 2px solid var(--faint-gray);
     border-radius: 1px;
     width: 33px;
-}
-
-.features-hr-div {
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
 @media (max-width: 1250px) {
-    .features{
+    #features {
         padding-left: 40px;
         padding-right: 40px;
     }
-    .features-width{
+
+    .features-width {
         width: 100%;
     }
 }
@@ -52,6 +50,7 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .features-div {
         padding: 55px 40px 55px 40px;
         box-sizing: border-box;

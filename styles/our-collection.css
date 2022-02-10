@@ -1,0 +1,36 @@
+#our-collection {
+    padding-top: 70px;
+    padding-bottom: 130px;
+    background-image: url("../images/backgrounds/our-collection.png");
+    background-position: right;
+    background-size: cover;
+}
+
+.our-collection-width {
+    width: 1170px;
+}
+
+.our-collection-div {
+    width: 570px;
+}
+
+h2.collection{
+
+}
+
+@media (max-width: 1250px) {
+    .our-collection {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .our-collection-width {
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    .our-collection-div {
+        width: 100%;
+    }
+}

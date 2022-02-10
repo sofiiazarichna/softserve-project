@@ -1,6 +1,5 @@
 header {
-    top: 0px;
-    left: 0px;
+    inset: 0;
     width: 100%;
     box-sizing: border-box;
     position: absolute;
