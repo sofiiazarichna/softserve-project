@@ -47,7 +47,7 @@
         else {
         document.getElementById(htmlId).innerHTML += `
             <div class="shop-item centered-horizontally">
-                <a href="product-page.html"><img src="${products[order].imgUrl}" alt="${products[order].imgAlt}" class="shop-item-img responsive" /></a href="product-page.html">
+                <a href="product-page.html" onclick="renderPage(products, id)"><img src="${products[order].imgUrl}" alt="${products[order].imgAlt}" class="shop-item-img responsive" /></a href="product-page.html">
                 <h5 class="shop-item-h5">${products[order].name}</h5>
                 <h3 class="shop-item-h3">$${parseInt(products[order].price).toFixed(2)}</h3>
                 <button class="shop-item-button">— Add to cart</button>
