@@ -82,3 +82,9 @@
     padding-left: 15px;
     padding-right: 15px;
 }
+
+@media (max-width: 767px) {
+    .faq-width {
+        flex-direction: column-reverse;
+    }
+}

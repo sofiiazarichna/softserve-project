@@ -1,0 +1,57 @@
+#promo-set {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.promo-set-width {
+    background-image: url(../images/backgrounds/promo-set.png);
+    background-size: cover;
+    background-position: right;
+    padding: 80px;
+    box-sizing: border-box;
+    width: 1170px;
+    position: relative;
+}
+
+h2.promo-set {
+    margin-top: 20px;
+}
+
+h6.promo-set-1 {
+    margin-top: 25px;
+}
+
+img.promo-set {
+    margin-top: 25px;
+    height: 120px;
+    width: inherit;
+}
+
+h6.promo-set-2 {
+    margin-top: 20px;
+}
+
+@media (max-width: 1250px){
+    #promo-set{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .promo-set-width {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    #promo-set {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    #promo-set {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}

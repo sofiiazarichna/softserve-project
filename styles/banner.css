@@ -1,0 +1,15 @@
+.banner {
+    padding: 70px 366.5px 70px 366.5px;
+}
+
+.banner-left {
+    padding: 15px 25px 15px 25px;
+    background-color: var(--light-peach);
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.banner-img {
+    max-width: 220px;
+    height: inherit;
+}
