@@ -21,6 +21,7 @@ html {
 body {
     min-height: 100%
 }
+
 h2 {
     font-family: 'Sorts Mill Goudy', serif;
     color: var(--dark-blue);

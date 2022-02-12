@@ -6,7 +6,7 @@ function loadTemplate() {
     document.body.innerHTML += `
     <header id="header" class="centered-horizontally">
         <div class="header-width space-between">
-            <img src="images/icons/aurora.svg" alt="the logo of the store" class="header-icon" />
+            <a href="index.html"><img src="images/icons/aurora.svg" alt="the logo of the store" class="header-icon" /></a>
             <div class="nav-div">
                 <nav>
                     <a href="#best-sellers"><p class="nav-link">Trending</p></a>
