@@ -14,12 +14,25 @@
     width: 570px;
 }
 
-h2.collection{
+h2.our-collection {
+    margin-top: 20px;
+}
 
+h6.our-collection {
+    margin-top: 40px;
+}
+
+p.our-collection {
+    margin-top: 15px;
+}
+
+button.our-collection {
+    padding: 16px 26px 17px 26px;
+    margin-top: 40px;
 }
 
 @media (max-width: 1250px) {
-    .our-collection {
+    #our-collection {
         padding-left: 40px;
         padding-right: 40px;
     }

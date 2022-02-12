@@ -1,4 +1,4 @@
-.blog {
+#blog {
     padding-top: 70px;
     padding-bottom: 40px;
 }
@@ -7,33 +7,41 @@
     width: 1170px;
 }
 
-.article {
+h2.blog {
+    margin-top: 20px;
+}
+
+h6.blog {
+    margin-top: 25px;
+}
+
+div.article {
     margin-top: 50px;
     padding-left: 15px;
     padding-right: 15px;
     width: 33.33%;
 }
 
-.article-img {
+img.article {
     width: 100%;
     box-sizing: border-box;
     aspect-ratio: 1/1;
     object-fit: cover;
 }
 
-.article-h3 {
+h3.article {
     margin-top: 20px;
 }
 
-.article-h4 {
+h4.article {
     margin-top: 20px;
 }
 
-.article-p {
+p.article {
     margin-top: 20px;
 }
 
-.read-more {
+h3.read-more {
     margin-top: 20px;
     color: var(--dark-blue);
 }

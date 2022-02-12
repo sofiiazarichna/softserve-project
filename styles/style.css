@@ -141,5 +141,8 @@ body {
     font-size: 11px;
 }
 
-/*banner*/
-
+@media (max-width: 767px) {
+    .hero-title {
+        font-size: 54px;
+    }
+}
