@@ -1,8 +1,9 @@
 footer {
-    top: 0px;
+    bottom: 0px;
     left: 0px;
     height: 120px;
     width: 100%;
+    box-sizing: border-box;
     padding-left: 40px;
     padding-right: 40px;
 }
