@@ -3,7 +3,15 @@
     padding-bottom: 150px;
 }
 
+.carousel {
+    width: 740px;
+    display: flex;
+    overflow: hidden;
+}
 
+.slide {
+    width: 740px;
+}
 
 img.testimonials {
     height: 130px;

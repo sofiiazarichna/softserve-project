@@ -3,14 +3,24 @@ footer {
     left: 0px;
     height: 120px;
     width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .table {
     width: 1200px;
+    margin-top: 20px;
 }
 
 .column {
     width: 33.33%;
+}
+
+.title {
+    margin-bottom: 20px;
+    color: var(--dark-blue);
+    font-weight: 700;
+    font-size: 16px;
 }
 
 .icon-display {
@@ -28,32 +38,15 @@ footer {
     justify-content: center;
 }
 
-#instagram-icon {
-    width: 18px;
-    height: inherit;
-}
-
-#twitter-icon {
-    width: 18px;
-    height: inherit;
-}
-
-#youtube-icon {
-    width: 20px;
-    height: inherit;
-}
-
 .copyright {
     margin-top: 40px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    color: var(--dark-blue);
+    font-weight: 600;
+    font-size: 11px;
 }
 
 @media (max-width: 1280px) {
-    footer {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
     .table {
         width: 100%;
     }
@@ -62,6 +55,7 @@ footer {
 @media (max-width: 767px) {
     .table {
         flex-wrap: wrap;
+        margin-top: 0;
     }
 
     .column {
