@@ -1,6 +1,6 @@
 (function () {
 async function loadProducts() {
-    const response = await fetch('script/products.json');
+    const response = await fetch('products.json');
     const products = await response.json();
 
     renderProduct(products, 33, "best-selling-items");
@@ -50,7 +50,7 @@ function renderProduct(products, id, htmlId) {
                 <a href="product-page.html"><img src="${products[order].imgUrl}" alt="${products[order].imgAlt}" class="shop-item-img responsive" /></a href="product-page.html">
                 <h5 class="shop-item-h5">${products[order].name}</h5>
                 <h3 class="shop-item-h3">$${parseInt(products[order].price).toFixed(2)}</h3>
-                <button class="shop-item-button">— Add to cart</button>
+                <button class="shop-item-button">â€” Add to cart</button>
             </div>`;
     }
 }
