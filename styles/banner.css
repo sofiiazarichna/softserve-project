@@ -1,29 +1,79 @@
 #banner {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 70px 40px 70px 40px;
 }
 
 .banner-width {
-    width: 1170px;
+    width: 1200px;
     display: flex;
     flex-direction: row;
 }
 
 .banner-left {
     padding: 15px 25px 15px 25px;
+    margin-left: 15px;
+    margin-right: 15px;
     background-color: var(--light-peach);
-    max-width: 300px;
+    width: calc(25% - 30px);
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h3.banner {
+    margin-top: 20px;
+}
+
+h6.banner {
+    margin-top: 20px;
 }
 
 .banner-right {
-    padding: 87px 30px 40px 30px;
-    background: url(../images/backgrounds/banner.pg);
-    max-width: 300px;
+    padding: 67px 30px 40px 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background: url(../images/backgrounds/banner.png);
+    background-size: cover;
+    width: calc(75% - 30px);
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
-.banner-img {
-    max-width: 220px;
-    height: inherit;
+h2.banner {
+    padding-top: 20px;
+    max-width: 350px;
+    text-align: right;
+}
+
+button.banner {
+    padding: 16px 26px 17px 26px;
+    margin-top: 92px;
+}
+
+@media (max-width: 1280px){
+    .banner-width {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    #banner {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .banner-width {
+        flex-wrap: wrap;
+    }
+
+    .banner-left {
+        width: 100%;
+    }
+
+    .banner-right {
+        margin-top: 50px;
+        width: 100%;
+    }
 }
