@@ -1,3 +1,4 @@
+(function () {
 function loadTemplate() {
     document.head.innerHTML += `
     <link rel="stylesheet" href="styles/header.css">
@@ -69,4 +70,9 @@ function loadTemplate() {
         </div>
     </footer >    
     `
-}
+    }
+
+    loadTemplate();
+})()
+
+
