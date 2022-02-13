@@ -41,3 +41,31 @@ button.store-item {
     padding: 12px 20px 13px 20px;
     font-weight: 400;
 }
+
+@media (max-width: 1250px) {
+    .main-width {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1250px) {
+    main {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    div.store-item {
+        width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 1250px) {
+    main {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    div.store-item {
+        width: 100%;
+    }
+}
