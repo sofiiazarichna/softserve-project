@@ -2,7 +2,7 @@
     async function loadProducts() {
         const response = await fetch('products.json');
         products = await response.json();
-        renderStorePage(products);
+        renderStorePage(products)
     }
 
     function renderStorePage(products) {
