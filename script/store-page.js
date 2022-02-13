@@ -9,8 +9,8 @@
         document.getElementById('main').classList.add("centered-horizontally");
         document.getElementById('main').innerHTML += `
             <div class="main-width">
-                <h2 class="homepage">Store homepage (${products.width})</h2>
-                <h2>Products (${products.width})</h2>
+                <h2 class="homepage">Store homepage (${products.length})</h2>
+                <h2>Products (${products.length})</h2>
                 <div id="store-page-items">
                 </div>
             </div>
