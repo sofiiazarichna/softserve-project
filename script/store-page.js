@@ -2,8 +2,20 @@
     async function loadProducts() {
         const response = await fetch('products.json');
         products = await response.json();
-        renderStorePage(products)
+        renderStorePage(products);
     }
+
+    function compare(a, b) {
+        if (a.name < b.name) {
+            return -1;
+        }
+        if (a.name > b.name) {
+            return 1;
+        }
+        return 0;
+    }
+
+
 
     function renderStorePage(products) {
         document.getElementById('main').classList.add("centered-horizontally");
@@ -15,6 +27,7 @@
                 </div>
             </div>
     `
+        products.sort(compare);
         for (product of products) {
             document.getElementById('store-page-items').innerHTML += `
                     <div class="store-item">
