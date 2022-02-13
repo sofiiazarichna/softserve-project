@@ -14,7 +14,7 @@ h2 {
     margin-bottom: 82px;
 }
 
-.store-page-items {
+#store-page-items {
     margin-top: 25px;
     display: flex;
     flex-wrap: wrap;
