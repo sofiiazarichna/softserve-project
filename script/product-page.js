@@ -1,12 +1,11 @@
-function renderPage(products, id) {
-    async function loadData() {
-        const response = await fetch('products.json');
-        const products = await response.json();
+(function () {
 
+    function showInfo() {
+        const product = JSON.parse(localStorage.product || "{}");
+        if (!product) return;
+        document.body.innerHTML += `${product.title}`;
     }
-    let order = returnOrder(products, id);
-        if (products[order].stock == 0) {
-            document.innerHTML += `
-            <h2>${products[order].name}</h1>
-            `    
-}
+
+    showInfo();
+
+})();

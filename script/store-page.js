@@ -31,13 +31,14 @@
         for (product of products) {
             document.getElementById('store-page-items').innerHTML += `
                     <div class="store-item">
-                        <img src="${product.imgUrl}" alt="${product.imgAlt}" class="responsive" />
+                        <a class="info-link" href="product-info.html" data-id=${product.id}><img src="${product.imgUrl}" alt="${product.imgAlt}" class="responsive" /></a>
                         <h5 class="store-item">${product.name}</h5>
                         <h3 class="store-item">$${parseInt(product.price).toFixed(2)}</h3>
                         <button class="store-item">Buy</button>
                     </div>
     `
         }
+        document.querySelectorAll('.info-link').forEach(link => link.addEventListener('click', productInfoClick));
     }
 
     loadProducts();

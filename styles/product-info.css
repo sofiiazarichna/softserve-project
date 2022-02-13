@@ -1,0 +1,31 @@
+:root {
+    --yellow: #FFD082;
+}
+
+a:hover{
+    color: var(--yellow);
+}
+
+main{
+    padding: 212px 40px 100px 40px;
+}
+
+.main-width {
+    width: 1170px;
+}
+
+.item {
+    margin-top: 50px;
+    display: flex;
+}
+
+.left {
+    box-sizing: border-box;
+    width: 48.72%;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+}
+
+.right {
+    width: 51.28%;
+}
