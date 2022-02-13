@@ -1,0 +1,43 @@
+main {
+    padding: 212px 40px 100px 40px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.main-width {
+    width: 1170px;
+}
+
+.homepage{
+    margin-bottom: 82px;
+}
+
+.store-page-items {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.store-item {
+    margin: 15px;
+    width: calc(25% - 30px);
+}
+
+h5.store-item {
+    margin-top: 24px;
+    font-size: 21.5px;
+    font-weight: 500;
+}
+
+h3.store-item {
+    margin-top: 16px;
+    font-size: 21.5px;
+}
+
+button.store-item {
+    margin-top: 24px;
+    padding: 12px 20px 13px 20px;
+    font-weight: 400;
+}

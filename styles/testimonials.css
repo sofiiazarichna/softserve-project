@@ -32,3 +32,10 @@ p.testimonials {
     margin: 25px 0 0 0;
     padding: 0;
 }
+
+button.testimonials {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    padding: 0;
+}

@@ -65,7 +65,7 @@ function loadTemplate() {
             </svg>
         </div>
         <div class="centered-horizontally">
-            <p class="copyright">© Created by | All rights Reserved</p>
+            <p class="copyright">&#169; Created by | All rights Reserved</p>
         </div>
     </footer >    
     `
