@@ -31,16 +31,28 @@ nav {
     box-sizing: border-box;
     width: 40px;
     height: 40px;
-    padding: 12px 8px 12px 8px;
+    padding: 11.51px 8px 11.51px 8px;
     display: flex;
 }
 
-.burger-icon-bar {
-    margin: 0;
-    border: 0;
-    border-top: 2px solid var(--dark-blue);
+#burger-icon-top-bun, #burger-icon-patty, #burger-icon-bottom-bun {
+    height: 2px;
+    background-color: var(--dark-blue);
     border-radius: 1px;
+    transition: 0.3s;
 }
+
+    #burger-icon-top-bun.burger-open {
+        transform: rotate(45deg) translate(2.8px, 7.77px);
+    }    
+
+    #burger-icon-patty.burger-open {
+        background-color: transparent;
+    }
+
+    #burger-icon-bottom-bun.burger-open {
+        transform: rotate(-45deg) translate(2.8px, -7.77px);
+    }
 
 .nav-link {
     margin: 5px 7.5px 5px 7.5px;

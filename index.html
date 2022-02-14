@@ -30,7 +30,25 @@ else - paragraph class-->
     <link rel="stylesheet" href="styles/faq.css" />
     <link rel="stylesheet" href="styles/footer.css" />
 </head>
-<body onload="storeDisplay('earrings'); storeActiveButton('earrings-button');">
+<body onload="storeDisplay('earrings'); storeActiveButton('earrings-button');">       
+    <header id="header" class="centered-horizontally">
+        <div class="header-width space-between">
+            <a href="index.html"><img src="images/icons/aurora.svg" alt="the logo of the store" class="header-icon" /></a>
+            <div class="nav-div">
+                <nav>
+                    <a href="#best-sellers"><p class="nav-link">Trending</p></a>
+                    <a href="#store"><p class="nav-link">Collection</p></a>
+                    <a href="#testimonials"><p class="nav-link">Testimonials</p></a>
+                    <a href="#footer"><p class="nav-link">Contact Us</p></a>
+                </nav>
+            </div>
+            <div class="burger-icon" onclick="toggleBurger()">
+                <div id="burger-icon-top-bun"></div>
+                <div id="burger-icon-patty" ></div>
+                <div id="burger-icon-bottom-bun"></div>
+            </div>
+        </div>
+    </header> 
     <main>
         <section id="cover" class="centered-horizontally">
             <div class="cover-width">
