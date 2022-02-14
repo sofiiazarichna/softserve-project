@@ -1,7 +1,6 @@
 ﻿#designer-jewelry {
     box-sizing: border-box;
-    padding-top: 160px; 
-    padding-bottom: 70px;
+    padding: 160px 40px 70px 40px;
     background-image: url(../images/backgrounds/designer-jewelry.png);
     background-size: cover;
 }
@@ -17,19 +16,51 @@
 }
 
 ul {
-    padding: 0;
+    padding-left: 21.39px;
 }
 
 li {
+    padding-left: 10px;
     padding-bottom: 16px;
 }
 
-li::marker {
-    content: "⯁";
-    color: var(--midtone-peach);
-    height: 24px;
-}
+    li::marker {
+        content: "⯁";
+        color: var(--midtone-peach);
+        font-size: 1.5em;
+        left: 0;
+    }
 
 button.designer-jewelry {
     padding: 16px 26px 17px 26px;
+}
+
+@media (max-width: 1250px) {
+    .designer-jewelry-width {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    #designer-jewelry {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    #designer-jewelry {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    #designer-jewelry {
+        background-position: 25% 0%;
+    }
+
+    .designer-jewelry-div {
+        width: 100%;
+    }
 }
