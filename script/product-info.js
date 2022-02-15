@@ -24,10 +24,9 @@
             </div>
         </main>
     `
+            renderPage()
         } 
     }
 
     showInfo();
-
-    renderPage()
 })();
