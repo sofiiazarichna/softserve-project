@@ -17,7 +17,7 @@ function loadTemplate() {
                 <div id="nav-div">
                     <nav id="nav">
                         <a href="#best-sellers"><p class="nav-link">Trending</p></a>
-                        <a href="#store"><p class="nav-link">Collection</p></a>
+                        <a href="store.html"><p class="nav-link">Collection</p></a>
                         <a href="#testimonials"><p class="nav-link">Testimonials</p></a>
                         <a href="#footer"><p class="nav-link">Contact Us</p></a>
                     </nav>

@@ -31,22 +31,26 @@ div.accordion {
     height: 15px;
 }
 
-#plus-horizontal-line {
-    margin: 0;
-    border: 0;
-    border-top: 2px solid var(--dark-blue);
-    border-radius: 1px;
+.plus-horizontal-line {
     width: 15px;
-    transform: translateY(6.5px);
+    height: 2px;
+    border-radius: 1px;
+    background-color: var(--dark-blue);
+    transform: translate(1px, 6.5px);
 }
 
-#plus-vertical-line {
-    margin: 0;
-    border: 0;
-    border-left: 2px solid var(--dark-blue);
-    border-radius: 1px;
+.plus-vertical-line {
+    width: 2px;
     height: 15px;
-    transform: translate(6.5px, -2px);
+    border-radius: 1px;
+    background-color: var(--dark-blue);
+    transform: translate(6.5px, -1.5px);
+    transition: 0.3s;
+}
+
+.faq-open {
+    height: 0px;
+    transform: translate(6.5px, 6.5px);
 }
 
 button.accordion {

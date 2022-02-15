@@ -81,7 +81,17 @@ nav {
         justify-content: space-between;
     }
 
-    nav {
+    #nav-div {
         display: none;
+    }
+
+    nav {
+        flex-direction:column;
+    }
+
+    #nav-div.burger-open {
+        display: block;
+        width: 200px;
+        background-color: var(--off-white);
     }
 }
