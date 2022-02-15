@@ -1,10 +1,16 @@
+function toggleBurger() {
+    document.getElementById("burger-icon-top-bun").classList.toggle("burger-open");
+    document.getElementById("burger-icon-patty").classList.toggle("burger-open");
+    document.getElementById("burger-icon-bottom-bun").classList.toggle("burger-open");
+}
+
 (function () {
 function loadTemplate() {
     document.head.innerHTML += `
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
     `
-    document.main.innerHTML += `
+    document.body.innerHTML += `
         <header id="header" class="centered-horizontally">
             <div class="header-width space-between">
                 <a href="index.html"><img src="images/icons/aurora.svg" alt="the logo of the store" class="header-icon" /></a>
@@ -69,8 +75,6 @@ function loadTemplate() {
                 <p class="copyright">&#169; Created by | All rights Reserved</p>
             </div>
         </footer >
-    `
-    document.body.innerHTML += `
         <script src="script/burger-menu.js"></script>
     `
     }
