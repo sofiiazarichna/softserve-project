@@ -15,7 +15,7 @@
                         <p class="stocked">In stock</p>
                         <h4 class="product-info">${product.name}</h4>
                         <h3 class="product-info">Product code ${product.id}</h3>
-                        <h5 class="product-info">$${parseInt(products[order].price).toFixed(2)}</h5>
+                        <h5 class="product-info">$${parseInt(product.price).toFixed(2)}</h5>
                         <button class="product-info">Add to cart</button>
                         <div class="product-info"><h6 class="product-info">DESCRIPTION</h6></div>
                         <p class="product-info">${product.description}</p>
