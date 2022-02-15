@@ -14,8 +14,8 @@ function loadTemplate() {
         <header id="header" class="centered-horizontally">
             <div class="header-width space-between">
                 <a href="index.html"><img src="images/icons/aurora.svg" alt="the logo of the store" class="header-icon" /></a>
-                <div class="nav-div">
-                    <nav>
+                <div id="nav-div">
+                    <nav id="nav">
                         <a href="#best-sellers"><p class="nav-link">Trending</p></a>
                         <a href="#store"><p class="nav-link">Collection</p></a>
                         <a href="#testimonials"><p class="nav-link">Testimonials</p></a>

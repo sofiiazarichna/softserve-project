@@ -1,13 +1,15 @@
-var openButton = 5; //if it's 5 the accordion is closed
+const NumberOfSlots = document.querySelectorAll('button.accordion').length;
+
+var openButton = NumberOfSlots;
 
 function accordionDisplay(x) {
     if (x === openButton) {
-        openButton = 5;
-        document.getElementById(x).style.display = "none";
+        document.getElementById(openButton).style.display = "none";
+        openButton = NumberOfSlots;
     }
     else {
-        if (openButton !== 5) {
-            document.getElementById(temp).style.display = "none";
+        if (openButton !== NumberOfSlots) {
+            document.getElementById(openButton).style.display = "none";
         }
         openButton = x;
         document.getElementById(x).style.display = "block";

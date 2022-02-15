@@ -30,7 +30,7 @@ else - paragraph class-->
     <link rel="stylesheet" href="styles/faq.css" />
     <link rel="stylesheet" href="styles/footer.css" />
 </head>
-<body onload="storeDisplay('earrings'); storeActiveButton('earrings-button');">       
+<body onload="storeDisplay('earrings'); storeActiveButton('earrings-button');">
     <main>
         <section id="cover" class="centered-horizontally">
             <div class="cover-width">
@@ -138,28 +138,26 @@ else - paragraph class-->
                 </div>
             </div>
         </section>
-        <section id="store" class="store">
-            <div class="centered-horizontally">
+        <section id="store" class="store centered-horizontally">
+            <div class="store-width centered-horizontally">
                 <h3>NEW IN</h3>
-                <h2>New Collection<span class="peach">.</span></h2>
-                <h6>Shine bright in our new 2021 collection of fine jewelry!</h6>
-            </div>
-            <div>
+                <h2 class="store">New Collection<span class="peach">.</span></h2>
+                <h6 class="store centered">Shine bright in our new 2021 collection of fine jewelry!</h6>
                 <div class="store-buttons">
-                    <button id="earrings-button" class="store-button" onclick="storeDisplay('earrings'); storeActiveButton('earrings-button')">Earrings</button>
-                    <button id="rings-button" class="store-button" onclick="storeDisplay('rings'); storeActiveButton('rings-button')">Rings</button>
-                    <button id="necklaces-button" class="store-button" onclick="storeDisplay('necklaces'); storeActiveButton('necklaces-button')">Necklaces</button>
+                    <button id="earrings-button" class="store" onclick="storeDisplay('earrings'); storeActiveButton('earrings-button')">Earrings</button>
+                    <button id="rings-button" class="store" onclick="storeDisplay('rings'); storeActiveButton('rings-button')">Rings</button>
+                    <button id="necklaces-button" class="store" onclick="storeDisplay('necklaces'); storeActiveButton('necklaces-button')">Necklaces</button>
                 </div>
-            </div>
-            <hr class="store-hr">
-            <div class="centered-horizontally">
-                <div id="earrings" class="shop-front space-between"></div>
-            </div>
-            <div class="centered-horizontally">
-                <div id="rings" class="shop-front space-between"></div>
-            </div>
-            <div class="centered-horizontally">
-                <div id="necklaces" class="shop-front space-between"></div>
+                <hr class="store" />
+                <div class="centered-horizontally">
+                    <div id="earrings" class="shop-front space-between"></div>
+                </div>
+                <div class="centered-horizontally">
+                    <div id="rings" class="shop-front space-between"></div>
+                </div>
+                <div class="centered-horizontally">
+                    <div id="necklaces" class="shop-front space-between"></div>
+                </div>
             </div>
         </section>
         <section id="banner" class="centered-horizontally">
@@ -256,18 +254,18 @@ else - paragraph class-->
                 </div>
             </div>
         </section>
-        <section id="faq" class="faq centered-horizontally">
+        <section id="faq" class="centered-horizontally">
             <div class="faq-width">
-                <div class="faq-accordion-div">
+                <div class="accordion-div">
                     <h3>FAQ</h3>
-                    <h2>Need Help<span class="peach">?</span></h2>
-                    <p class="subtitle">If you have any questions, feel free to contact us in any convenient way.</p>
-                    <div>
+                    <h2 class="faq">Need Help<span class="peach">?</span></h2>
+                    <h6 class="faq">If you have any questions, feel free to contact us in any convenient way.</h6>
+                    <div class="accordion">
                         <button class="accordion space-between" onclick="accordionDisplay(0)">
                             <h4>Where do you ship to?</h4>
                             <div class="plus-icon">
-                                <hr id="plus-horizontal-line" />
-                                <hr id="plus-vertical-line" />
+                                <div id="0" class="plus-horizontal-line"></div>
+                                <div id="0" class="plus-vertical-line"></div>
                             </div>
                         </button>
                         <div id="0" class="panel">
@@ -277,8 +275,8 @@ else - paragraph class-->
                         <button class="accordion space-between" onclick="accordionDisplay(1)">
                             <h4>How can I make the order?</h4>
                             <div class="plus-icon">
-                                <hr id="plus-horizontal-line" />
-                                <hr id="plus-vertical-line" />
+                                <div id="plus-horizontal-line"></div>
+                                <div id="plus-vertical-line"></div>
                             </div>
                         </button>
                         <div id="1" class="panel">
@@ -288,8 +286,8 @@ else - paragraph class-->
                         <button class="accordion space-between" onclick="accordionDisplay(2)">
                             <h4>Can I change my order after it is placed?</h4>
                             <div class="plus-icon">
-                                <hr id="plus-horizontal-line" />
-                                <hr id="plus-vertical-line" />
+                                <div id="plus-horizontal-line"></div>
+                                <div id="plus-vertical-line"></div>
                             </div>
                         </button>
                         <div id="2" class="panel">
@@ -299,8 +297,8 @@ else - paragraph class-->
                         <button class="accordion space-between" onclick="accordionDisplay(3)">
                             <h4>Do you have offline stores?</h4>
                             <div class="plus-icon">
-                                <hr id="plus-horizontal-line" />
-                                <hr id="plus-vertical-line" />
+                                <div id="plus-horizontal-line"></div>
+                                <div id="plus-vertical-line"></div>
                             </div>
                         </button>
                         <div id="3" class="panel">
@@ -319,14 +317,12 @@ else - paragraph class-->
                         </div>
                     </div>
                 </div>
-                <div>
-                    <img src="images/backgrounds/faq.jpg" alt="" class="faq-img" />
-                </div>
+                <div class="faq-img"><img src="images/backgrounds/faq.jpg" alt="" class="responsive" /></div>  
             </div>
         </section>
     </main>
     <script src="script/header-footer.js"></script>
-    <script src="script/script.js"></script>
     <script src="script/product-list.js"></script>
+    <script src="script/accordion.js"></script>
 </body>
 </html>

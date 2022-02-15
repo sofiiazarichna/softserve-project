@@ -1,3 +1,17 @@
+function storeDisplay(str) {
+    document.getElementById("earrings").style.display = "none";
+    document.getElementById("rings").style.display = "none";
+    document.getElementById("necklaces").style.display = "none";
+    document.getElementById(str).style.display = "flex";
+}
+
+function storeActiveButton(str) {
+    document.getElementById("earrings-button").classList.remove("store-button-active");
+    document.getElementById("rings-button").classList.remove("store-button-active");
+    document.getElementById("necklaces-button").classList.remove("store-button-active");
+    document.getElementById(str).classList.add("store-button-active");
+}
+
 (function () {
     async function loadProducts() {
         const response = await fetch('script/products.json');
@@ -50,11 +64,10 @@
                     <a class="info-link" href="product-info.html" data-id=${products[order].id}><img src="${products[order].imgUrl}" alt="${products[order].imgAlt}" class="shop-item-img responsive" /></a>
                     <h5 class="shop-item-h5">${products[order].name}</h5>
                     <h3 class="shop-item-h3">$${parseInt(products[order].price).toFixed(2)}</h3>
-                    <button class="shop-item-button">— Add to cart</button>
+                    <button class="shop-item-button">&mdash Add to cart</button>
                 </div>`;
         }
     }
 
     loadProducts()
 })()
-
