@@ -33,7 +33,7 @@ function loadTemplate() {
             <img src="images/icons/aurora.svg" alt="the logo of the store" style="width: 100px; height: inherit;" />
             <div class="table space-between">
                 <div class="column centered-horizontally">
-                    <p class="title">STORE</p>
+                    <a href="store.html"><p class="title">STORE</p></a>
                     <div class="centered-horizontally">
                         <a><p>Trending</p></a>
                         <a><p>Collection</p></a>
