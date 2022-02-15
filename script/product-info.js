@@ -4,7 +4,6 @@
         const product = JSON.parse(localStorage.product || "{}");
         if (!product) return;
         function renderPage() {
-        document.body.innerHTML += `${product.name}`;
         document.body.innerHTML += `
         <main id="main" class="centered-horizontally">
             <div class="main-width">
