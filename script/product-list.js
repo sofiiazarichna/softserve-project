@@ -64,7 +64,7 @@ function storeActiveButton(str) {
                     <a class="info-link" href="product-info.html" data-id=${products[order].id}><img src="${products[order].imgUrl}" alt="${products[order].imgAlt}" class="shop-item-img responsive" /></a>
                     <h5 class="shop-item-h5">${products[order].name}</h5>
                     <h3 class="shop-item-h3">$${parseInt(products[order].price).toFixed(2)}</h3>
-                    <button class="shop-item-button">#8212 Add to cart</button>
+                    <button class="shop-item-button">&mdash Add to cart</button>
                 </div>`;
         }
     }

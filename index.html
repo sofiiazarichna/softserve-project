@@ -30,7 +30,7 @@ else - paragraph class-->
     <link rel="stylesheet" href="styles/faq.css" />
     <link rel="stylesheet" href="styles/footer.css" />
 </head>
-<body onload="storeDisplay('earrings'); storeActiveButton('earrings-button');">
+<body onload="storeDisplay('earrings'); storeActiveButton('earrings-button'); slide(0);">
     <main>
         <section id="cover" class="centered-horizontally">
             <div class="cover-width">
@@ -46,30 +46,30 @@ else - paragraph class-->
         <section id="features" class="centered-horizontally">
             <div class="features-width">
                 <div class="features-div">
-                    <img src="images/icons/gem.svg" alt="a graphic of a gem" class="features" />
-                    <h4 class="features">Gems and Natural Stones</h4>
+                    <img src="images/icons/gem.svg" alt="a graphic of a gem" class="centered features" />
+                    <h4 class="centered features">Gems and Natural Stones</h4>
                     <div class="centered-horizontally"><hr class="features"></div>
-                    <p>Our fine jewelry will never darken or wear off. With proper care, you can wear it for 50+ years and pass it to your heirs!</p>
+                    <p class="centered">Our fine jewelry will never darken or wear off. With proper care, you can wear it for 50+ years and pass it to your heirs!</p>
                 </div>
                 <div class="features-div">
-                    <img src="images/icons/necklace.svg" alt="a graphic of a necklace" class="features" />
-                    <h4 class="features">585 Gold</h4>
+                    <img src="images/icons/necklace.svg" alt="a graphic of a necklace" class="centered features" />
+                    <h4 class="centered features">585 Gold</h4>
                     <div class="centered-horizontally"><hr class="features"></div>
-                    <p>We use precious and semi-precious stones: diamonds, emeralds, sapphires, etc. and also work with Swarovski crystals.</p>
+                    <p class="centered">We use precious and semi-precious stones: diamonds, emeralds, sapphires, etc. and also work with Swarovski crystals.</p>
                 </div>
                 <div class="features-div">
-                    <img src="images/icons/earrings.svg" alt="a graphic of earrings" class="features" />
-                    <h4 class="features">Designer Collections</h4>
+                    <img src="images/icons/earrings.svg" alt="a graphic of earrings" class="centered features" />
+                    <h4 class="centered features">Designer Collections</h4>
                     <div class="centered-horizontally"><hr class="features"></div>
-                    <p>We create exquisite fine jewelry. Each collection has a soul and a certain message that resonates in the hearts of our customers.</p>
+                    <p class="centered">We create exquisite fine jewelry. Each collection has a soul and a certain message that resonates in the hearts of our customers.</p>
                 </div>
             </div>
         </section>
         <section id="best-sellers" class="centered-horizontally">
             <div class="best-sellers-width centered-horizontally">
                 <h3>TRENDING</h3>
-                <h2 class="best-sellers">Best-Selling Items<span class="peach">.</span></h2>
-                <h6 class="best-sellers">In this section, you will find fine jewelry chosen by hundreds of our customers around the world. Best price guaranteed.</h6>
+                <h2 class="centered best-sellers">Best-Selling Items<span class="peach">.</span></h2>
+                <h6 class="centered best-sellers">In this section, you will find fine jewelry chosen by hundreds of our customers around the world. Best price guaranteed.</h6>
             </div>
             <div id="best-selling-items" class="shop-front space-between"></div>
         </section>
@@ -87,8 +87,8 @@ else - paragraph class-->
         <section id="categories" class="centered-horizontally">
             <div class="centered">
                 <h3>CATEGORIES</h3>
-                <h2 class="categories">Choose Your Favorites<span class="peach">.</span></h2>
-                <h6 class="categories">Choose the fine jewelry that you will shine in tomorrow.</h6>
+                <h2 class="centered categories">Choose Your Favorites<span class="peach">.</span></h2>
+                <h6 class="centered categories">Choose the fine jewelry that you will shine in tomorrow.</h6>
             </div>
             <div class="categories-width">
                 <div class="category-container">
@@ -208,28 +208,33 @@ else - paragraph class-->
         </section>
         <section id="testimonials" class="centered-horizontally">
             <div class="testimonials-width">
-                <div class="carousel">
-                    <div class="slide centered-horizontally">
-                        <img src="images/icons/alice-meterson.svg" class="testimonials" />
-                        <h5 class="testimonials">Alice Meterson</h5>
-                        <p class="testimonials"><span class="peach">«</span>I love every item made by Aurora. Every time I open their website, I want to buy everything! The quality is very good, and looking at these items, there's no doubt it's the designer jewelry.<span class="peach">»</span></p>
+                <div class="carousel-div">
+                    <div class="carousel">
+                        <div id="slide1" class="slide centered-horizontally">
+                            <img src="images/icons/alice-meterson.svg" class="testimonials" />
+                            <h5 class="testimonials">Alice Meterson</h5>
+                            <p class="testimonials"><span class="peach">«</span>I love every item made by Aurora. Every time I open their website, I want to buy everything! The quality is very good, and looking at these items, there's no doubt it's the designer jewelry.<span class="peach">»</span></p>
+                        </div>
+                        <div id="slide2" class="slide centered-horizontally">
+                            <img src="images/icons/mindy-owler.svg" class="testimonials" />
+                            <h5 class="testimonials">Mindy Owler</h5>
+                            <p class="testimonials"><span class="peach">«</span>I love exclusive jewelry. Unfortunately, even the big modern brands make pretty typical products that are similar to one another. Aurora is completely different!<span class="peach">»</span></p>
+                        </div>
+                        <div id="slide3" class="slide centered-horizontally">
+                            <img src="images/icons/victoria-roulson.svg" class="testimonials" />
+                            <h5 class="testimonials">Victoria Roulson</h5>
+                            <p class="testimonials"><span class="peach">«</span>Thanks for my new earrings! I still receive a huge number of compliments on my jewelry and I am happy to say that it is the Aurora brand.<span class="peach">»</span></p>
+                        </div>
                     </div>
-                    <div class="slide centered-horizontally">
-                        <img src="images/icons/mindy-owler.svg" class="testimonials" />
-                        <h5 class="testimonials">Mindy Owler</h5>
-                        <p class="testimonials"><span class="peach">«</span>I love exclusive jewelry. Unfortunately, even the big modern brands make pretty typical products that are similar to one another. Aurora is completely different!<span class="peach">»</span></p>
-                    </div>
-                    <div class="slide centered-horizontally">
-                        <img src="images/icons/victoria-roulson.svg" class="testimonials" />
-                        <h5 class="testimonials">Victoria Roulson</h5>
-                        <p class="testimonials"><span class="peach">«</span>Thanks for my new earrings! I still receive a huge number of compliments on my jewelry and I am happy to say that it is the Aurora brand.<span class="peach">»</span></p>
+                    <div class="centered-horizontally">
+                        <div>
+                            <button id="testimonials-button1" class="testimonials" onclick="slide(0)"></button>
+                            <button id="testimonials-button2" class="testimonials" onclick="slide(1)"></button>
+                            <button id="testimonials-button3" class="testimonials" onclick="slide(2)"></button>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <button class="testimonials"></button>
-                    <button class="testimonials"></button>
-                    <button class="testimonials"></button>
-                </div>
+                <p class="carousel-notification">The carousel doesn't work on a small screen size</p>
             </div>
         </section>
         <section id="partners" class="centered-horizontally">
@@ -317,12 +322,13 @@ else - paragraph class-->
                         </div>
                     </div>
                 </div>
-                <div class="faq-img"><img src="images/backgrounds/faq.jpg" alt="" class="responsive" /></div>  
+                <div class="faq-img"><img src="images/backgrounds/faq.jpg" alt="" class="responsive" /></div>
             </div>
         </section>
     </main>
     <script src="script/header-footer.js"></script>
     <script src="script/product-list.js"></script>
+    <script src="script/carousel.js"></script>
     <script src="script/accordion.js"></script>
 </body>
 </html>

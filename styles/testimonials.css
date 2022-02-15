@@ -1,6 +1,5 @@
 #testimonials {
-    padding-top: 100px;
-    padding-bottom: 150px;
+    padding: 100px 24px 150px 24px;
 }
 
 .carousel {
@@ -11,6 +10,15 @@
 
 .slide {
     width: 740px;
+    transition: transform 0.3s;
+}
+
+.second-slide {
+    transform: translateX(-740px);
+}
+
+.third-slide {
+    transform: translateX(-1480px);
 }
 
 img.testimonials {
@@ -37,5 +45,33 @@ button.testimonials {
     width: 10px;
     height: 10px;
     border-radius: 5px;
+    margin: 10px;
     padding: 0;
+    background-color: var(--midtone-peach);
+}
+
+button.testimonials:hover {
+    background-color: var(--peach);
+}
+
+    button.testimonials.active {
+        background-color: var(--peach);
+    }
+
+.carousel-notification {
+    display: none;
+}
+
+@media (max-width: 788px){
+    #testimonials {
+        padding-bottom: 100px;
+    }
+
+    .carousel-div {
+        display: none;
+    }
+
+    .carousel-notification {
+        display: block;
+    }
 }
