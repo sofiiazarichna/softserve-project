@@ -15,7 +15,11 @@
         return 0;
     }
 
-
+    function productInfoClick(ev) {
+        const productId = ev.target.dataset.id;
+        const product = products.filter(product => product.id === productId)[0];
+        localStorage.product = JSON.stringify(product);
+    }
 
     function renderStorePage(products) {
         document.getElementById('main').classList.add("centered-horizontally");

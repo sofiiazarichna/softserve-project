@@ -3,7 +3,7 @@
     function showInfo() {
         const product = JSON.parse(localStorage.product || "{}");
         if (!product) return;
-        document.body.innerHTML += `${data-id}`;
+        document.body.innerHTML += `${product.name}`;
     }
 
     showInfo();
