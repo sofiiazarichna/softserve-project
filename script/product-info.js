@@ -24,8 +24,8 @@
             </div>
         </main>
     `
-            renderPage()
         } 
+        renderPage()
     }
 
     showInfo();
